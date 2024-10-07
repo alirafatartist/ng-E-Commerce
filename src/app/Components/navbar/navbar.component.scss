@@ -1,0 +1,24 @@
+@import "../../Sass/_variables";
+button {
+  position: relative;
+  svg {
+    stroke: $color-text;
+    transition: 0.3s;
+  }
+  &:hover {
+    color: $color-text-secondry;
+    svg {
+      stroke: $color-text-secondry;
+    }
+  }
+  .counter {
+    background: $color-text-secondry;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    bottom: -10px;
+    right: -10px;
+    line-height: 20px;
+    font-size: 0.8rem;
+  }
+}

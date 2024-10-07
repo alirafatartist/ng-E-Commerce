@@ -2,20 +2,14 @@
 
 $font-family:'Roboto', sans-serif;
 
-$color-primary: #C58F63;            // Primary Color
-$color-dark: #121212;               // Dark Color
 $color-light-gray: #CCCCCC;         // Light Gray
-$color-medium-gray: #999999;        // Medium Gray
-$color-dark-gray: #666666;          // Dark Gray
-$color-accent: #F04705;             // Accent Color
-$color-teal: #97D8CA;               // Teal Color
-$color-background: #F3F4F6;         // Website Background Color
 $color-muted: #A9A9A9;              // Muted Color
 
 // Additional Variables Based on Use Cases
-$color-text: $color-dark;            // Color of Text
-$color-text-secondry: $color-primary;   // Text Color on Hover  // Color of Selected Text
-$color-price: $color-accent;         // Price Color
-$color-placeholder: $color-medium-gray; // Placeholder Color for Inputs
-$color-sale-badge: $color-accent;          // Sale Badge Color
-$color-discount-badge: $color-teal;     // Discount Badge Color
+$color-text: #121212;            // Color of Text
+$color-text-secondry: #C58F63;   // Text Color on Hover  // Color of Selected Text        // Price Color
+$color-background: #F3F4F6;         // Website Background Color
+$color-placeholder: #999999; // Placeholder Color for Inputs
+$color-price: #666666; // price Color 
+$color-sale-badge: #F04705;          // Sale Badge Color
+$color-discount-badge: #97D8CA;     // Discount Badge Color

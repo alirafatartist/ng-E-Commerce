@@ -1,0 +1,24 @@
+@import "../../Sass/_variables";
+
+.btn-close {
+  left: -1rem;
+}
+.links {
+  .link {
+    font-size: 1.4rem;
+    font-weight: normal;
+    cursor: pointer;
+  }
+}
+.contact-info {
+  p {
+    color: $color-price;
+  }
+}
+
+.fa-brands{
+  transition: 0.3s;
+  &:hover{
+    color: $color-text-secondry;
+  }
+}
