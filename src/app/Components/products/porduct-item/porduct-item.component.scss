@@ -1,10 +1,13 @@
-.card{
-  // &:hover{
-
-  // }
-  .card-title:hover{
-    color: rgb(227, 150, 49);
-    cursor: pointer;
+@import "./../../../Sass/_variables";
+.card {
+  .card-title:hover {
+    transition: 0.3s;
+    &:hover {
+      color: $color-text-secondry;
+      cursor: pointer;
+    }
   }
-
+  .price{
+    color: $color-price;
   }
+}

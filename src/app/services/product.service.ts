@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { IProduct } from '../Interfaces/iproduct';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  products:any[]= [
+  products:IProduct[]= [
     {
       image:"assets/Images/products/product-1.jpg",
       name:'Animi Dolor Pariatur',
@@ -19,8 +20,8 @@ export class ProductService {
     {
       image:"assets/Images/products/product-2.jpg",
       name:'Art Deco Home',
-      oldPrice:'$300.00',
-      newPrice:'$300.00',
+      oldPrice:'$30.00',
+      newPrice:'$30.00',
       isoffered:false,
       scale:0,
       count:0,
