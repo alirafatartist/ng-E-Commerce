@@ -1,15 +1,15 @@
 <section class="section product" id="product" aria-label="product">
   <div class="container">
-    <div class="d-flex justify-content-between  mb-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
       <h2 class="text-center">Popular Products</h2>
-      <div class="d-flex justify-content-center align-items-center flex-wrap ">
-        <button (click)="setSelectedType('All')" class="nav-link btn clk">All Products</button>
+      <div class="d-flex justify-content-center align-items-center">
+        <button (click)="setSelectedType('All')" class="nav-link btn clk" [ngClass]="{'active':selectedType == 'All'}">All Products</button>
         <span class="separator mx-2">|</span>
-        <button (click)="setSelectedType('Accessory')" class="nav-link btn clk">Accessory</button>
+        <button (click)="setSelectedType('Accessory')" class="nav-link btn clk" [ngClass]="{'active':selectedType == 'Accessory'}">Accessory</button>
         <span class="separator mx-2">|</span>
-        <button (click)="setSelectedType('Decoration')" class="nav-link btn clk">Decoration</button>
+        <button (click)="setSelectedType('Decoration')" class="nav-link btn clk" [ngClass]="{'active':selectedType == 'Decoration'}">Decoration</button>
         <span class="separator mx-2">|</span>
-        <button (click)="setSelectedType('Furniture')" class="nav-link btn clk">Furniture</button>
+        <button (click)="setSelectedType('Furniture')" class="nav-link btn clk" [ngClass]="{'active':selectedType == 'Furniture'}">Furniture</button>
       </div>
     </div>
     <div class="row gy-3">

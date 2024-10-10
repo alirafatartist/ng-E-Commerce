@@ -8,6 +8,10 @@
     font-size: 1.4rem;
     font-weight: normal;
     cursor: pointer;
+    a{
+      text-decoration: none;
+      color: $color-text;
+    }
   }
 }
 .contact-info {
@@ -21,4 +25,8 @@
   &:hover{
     color: $color-text-secondry;
   }
+}
+
+.offcanvas-body{
+  overflow: hidden;
 }

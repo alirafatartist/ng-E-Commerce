@@ -1,3 +1,4 @@
+@import "./../../Sass/_variables";
 .product-item {
   transition: transform 0.2s ease;
 }
@@ -5,8 +6,12 @@
 .product-item:hover {
   transform: scale(1.05);
 }
-.clk:hover{
-  // color: var(color-light-gray);
-  color: rgb(227, 150, 49);
+.clk:hover {
+  color: $color-text-secondry;
   cursor: pointer;
+}
+
+.active {
+  // font-weight: bold;
+  color: $color-text-secondry;
 }

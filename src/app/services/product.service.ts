@@ -20,8 +20,8 @@ export class ProductService {
     {
       image:"assets/Images/products/product-2.jpg",
       name:'Art Deco Home',
-      oldPrice:'$300.00',
-      newPrice:'$300.00',
+      oldPrice:'$30.00',
+      newPrice:'$30.00',
       isoffered:false,
       scale:0,
       count:0,
