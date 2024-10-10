@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 
-=======
 @import "./../../../Sass/_variables";
 .card {
-  .card-title:hover {
+  .card-title {
     transition: 0.3s;
     &:hover {
       color: $color-text-secondry;
@@ -13,7 +11,6 @@
   .price{
     color: $color-price;
   }
->>>>>>> e1471eeee553a2c849e9b32530b0baf84b3bab35
 
 .card {
   &:hover{
