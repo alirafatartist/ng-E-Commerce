@@ -1,4 +1,6 @@
+<<<<<<< HEAD
 
+=======
 @import "./../../../Sass/_variables";
 .card {
   .card-title:hover {
@@ -11,11 +13,9 @@
   .price{
     color: $color-price;
   }
+>>>>>>> e1471eeee553a2c849e9b32530b0baf84b3bab35
 
 .card {
-  .actions{
-    // transition: transform 0.3s ease;
-  }
   &:hover{
     .actions {
       display: flex;
@@ -25,18 +25,13 @@
       flex-wrap: wrap;
     }
   }
-  // .card-img {
-  //   transition: filter 0.3s ease, transform 0.3s ease;
-  //   &:hover {
-  //     filter: blur(.5);
-  //     transform: scale(1.1);
-  //   }
-  // }
 
   .card-action-btn {
+    transition: opacity 0.3s ease, filter 0.3s ease;
+
     &:hover {
       svg.icon-tabler {
-        stroke: $color-text-secondry;
+        stroke: $textcolor;
       }
     }
   }
@@ -44,7 +39,7 @@
     transition: color 0.3s ease;
 
     &:hover {
-      color: $color-text-secondry;
+      color: $textcolor;
       cursor: pointer;
     }
   }
@@ -52,21 +47,4 @@
 }
 .price{
   color: $color-price;
-}
-.icon-container{
-  width: 45px;
-    height: 45px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    svg{
-      transition: 0.3s;
-    }
-    &:hover{
-      svg{
-        stroke: $color-text-secondry;
-      }
-    }
 }

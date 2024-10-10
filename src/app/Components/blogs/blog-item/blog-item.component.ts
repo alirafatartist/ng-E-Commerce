@@ -6,5 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './blog-item.component.scss'
 })
 export class BlogItemComponent {
+  // datetime:Date=new Date();
   @Input({required:true})blg:any;
 }
