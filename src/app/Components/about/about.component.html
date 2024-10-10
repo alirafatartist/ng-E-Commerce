@@ -8,8 +8,8 @@
     finishes with the portrait.
   </p>
   </div>
-  <div class="vid position-relative">
-    <div class="play position-absolute z-2">
+  <div class="vid position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <div class="play position-absolute z-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <path d="M7 4v16l13 -8z" />
@@ -20,6 +20,25 @@
     </div>
     <div class="w-100">
       <img class="w-100" src="./../../../assets/Images/products/about-banner.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <video controls class="w-100 h-100" autoplay>
+          <!-- <div class="modal-footer position-absolute bg-black top-0">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div> -->
+          <source src="../../../assets/videos/small.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
   </div>
 </div>
