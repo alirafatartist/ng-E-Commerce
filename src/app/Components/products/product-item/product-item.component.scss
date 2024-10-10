@@ -1,0 +1,29 @@
+.card
+{
+  &:hover{
+    .card-action-list {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+  }
+  .card-action-list {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(color-light-gray);
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  //may. directive
+  .card-title:hover{
+// color: var(color-light-gray);
+color: rgb(202, 178, 178);
+cursor: pointer;
+  }
+}
+// .nav-link{
+//     display: inline !important    ;
+// }
