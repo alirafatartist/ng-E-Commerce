@@ -1,0 +1,38 @@
+<div class="card h-100 shadow-sm border-0 rounded-lg position-relative">
+  <img [src]="prd.image" alt="{{ prd.name }}" class="card-img w-100 h-100">
+  <div class="card-body text-center">
+    <h5 class="card-title">{{ prd.name }}</h5>
+    <p *ngIf="prd.isoffered" class="text-muted fs-5 d-flex justify-content-around">
+      <del class="opacity-50">{{ prd.oldPrice }}</del>
+      <span>{{ prd.newPrice }}</span>
+    </p>
+    <p *ngIf="!prd.isoffered" class="fs-5">{{ prd.newPrice }}</p>
+      <div *ngIf="prd.count === 0" class="badge bg-black position-absolute top-0 end-0 p-2 rounded-1 text-center">Out of Stock</div>
+      <div *ngIf="prd.scale> 0" class="badge bg-danger position-absolute top-0 end-0  rounded-100 text-center">scale</div>
+
+
+
+      <!-- <ul class="card-action-list d-none">
+        <li>
+          <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+            <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </li>
+
+        <li>
+          <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </li>
+        <ion-icon name="heart"></ion-icon>
+        <li>
+          <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </li>
+
+        Action Icons
+      </ul> -->
+
+  </div>
+</div>

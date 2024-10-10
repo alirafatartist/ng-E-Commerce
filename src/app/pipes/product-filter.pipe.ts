@@ -5,10 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ProductFilterPipe implements PipeTransform {
 
-  transform(products: any[], type: string): any[] {
-    if (!products || !type || type === 'All') {
+  transform(products: any[], selectedType: string): any[] {
+    if (!products || !selectedType || selectedType === 'All') {
       return products;
     }
-    return products.filter(product => product.Type === type);
+
+    return products.filter(product => product.Type === selectedType);
   }
+
 }

@@ -1,0 +1,27 @@
+<section class="section product" id="product" aria-label="product">
+  <div class="container">
+    <div class="d-flex justify-content-between  mb-4">
+      <h2 class="text-center">Popular Products</h2>
+      <div class="d-flex justify-content-center align-items-center">
+        <button (click)="setSelectedType('All')" class="nav-link btn clk">All Products</button>
+        <span class="separator mx-2">|</span>
+        <button (click)="setSelectedType('Accessory')" class="nav-link btn clk">Accessory</button>
+        <span class="separator mx-2">|</span>
+        <button (click)="setSelectedType('Decoration')" class="nav-link btn clk">Decoration</button>
+        <span class="separator mx-2">|</span>
+        <button (click)="setSelectedType('Furniture')" class="nav-link btn clk">Furniture</button>
+      </div>
+    </div>
+    <div class="row gy-3">
+      <ng-container *ngIf="products.length > 0;">
+        <ng-container *ngFor="let product of products | productFilter:selectedType">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <app-porduct-item [prd]="product"></app-porduct-item>
+            <!-- <app-product-item ></app-product-item> -->
+          </div>
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+</section>
+
