@@ -10,7 +10,6 @@
   .price{
     color: $color-price;
   }
-$textcolor: #C58F63;
 
 .card {
   .actions{
@@ -44,7 +43,7 @@ $textcolor: #C58F63;
       filter: none;
 
       svg.icon-tabler {
-        stroke: $textcolor;
+        stroke: $color-text-secondry;
       }
     }
   }
@@ -52,9 +51,12 @@ $textcolor: #C58F63;
     transition: color 0.3s ease;
 
     &:hover {
-      color: $textcolor;
+      color: $color-text-secondry;
       cursor: pointer;
     }
   }
 }
+}
+.price{
+  color: $color-price;
 }
