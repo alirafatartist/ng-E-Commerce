@@ -1,6 +1,6 @@
 @import "./../../../Sass/_variables";
 .card {
-  .card-title:hover {
+  .card-title {
     transition: 0.3s;
     &:hover {
       color: $color-text-secondry;
@@ -13,11 +13,9 @@
 
 .card {
   .card-action-btn {
-    transition: opacity 0.3s ease, filter 0.3s ease;
-
     &:hover {
       svg.icon-tabler {
-        stroke: $textcolor;
+        stroke: $color-text-secondry;
       }
     }
   }
@@ -25,7 +23,7 @@
     transition: color 0.3s ease;
 
     &:hover {
-      color: $textcolor;
+      color: $color-text-secondry;
       cursor: pointer;
     }
   }
