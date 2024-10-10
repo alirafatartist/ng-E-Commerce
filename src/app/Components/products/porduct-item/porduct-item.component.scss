@@ -13,6 +13,9 @@
   }
 
 .card {
+  .actions{
+    // transition: transform 0.3s ease;
+  }
   &:hover{
     .actions {
       display: flex;
@@ -22,13 +25,18 @@
       flex-wrap: wrap;
     }
   }
+  // .card-img {
+  //   transition: filter 0.3s ease, transform 0.3s ease;
+  //   &:hover {
+  //     filter: blur(.5);
+  //     transform: scale(1.1);
+  //   }
+  // }
 
   .card-action-btn {
-    transition: opacity 0.3s ease, filter 0.3s ease;
-
     &:hover {
       svg.icon-tabler {
-        stroke: $textcolor;
+        stroke: $color-text-secondry;
       }
     }
   }
@@ -36,7 +44,7 @@
     transition: color 0.3s ease;
 
     &:hover {
-      color: $textcolor;
+      color: $color-text-secondry;
       cursor: pointer;
     }
   }
@@ -44,4 +52,21 @@
 }
 .price{
   color: $color-price;
+}
+.icon-container{
+  width: 45px;
+    height: 45px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    svg{
+      transition: 0.3s;
+    }
+    &:hover{
+      svg{
+        stroke: $color-text-secondry;
+      }
+    }
 }
