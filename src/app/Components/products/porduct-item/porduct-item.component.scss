@@ -60,3 +60,12 @@
 .price{
   color: $color-price;
 }
+.icon-container{
+  width: 45px;
+    height: 45px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
