@@ -1,0 +1,28 @@
+@import "./../../Sass/_variables";
+
+.product {
+  transition: 0.3s;
+  overflow: hidden;
+  img {
+    transition: transform 0.5s ease;
+  }
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+h5{
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover{
+    color: $color-text-secondry;
+  }
+}
+.content {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  z-index: 1;
+}
