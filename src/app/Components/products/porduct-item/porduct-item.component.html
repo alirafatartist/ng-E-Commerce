@@ -1,9 +1,4 @@
-<div class="card h-100 border-0 position-relative">
-  <img [src]="prd.image" alt="{{ prd.name }}" class="card-img w-100 h-100">
-  <div class="card-body text-center">
-    <h6 class="card-title">{{ prd.name }}</h6>
-    <p *ngIf="prd.isoffered" class="text-muted fs-5 d-flex justify-content-around">
-<div class="card h-100 shadow-sm border-0 rounded-lg position-relative overflow-hidden">
+<div class="card h-100 border-0 rounded-lg position-relative overflow-hidden">
   <div class="card-img position-relative">
     <!-- Image container -->
     <img [src]="prd.image" alt="{{ prd.name }}" class=" w-100 h-100">
@@ -54,7 +49,6 @@
       <del class="opacity-50">{{ prd.oldPrice }}</del>
       <span class="price">{{ prd.newPrice }}</span>
     </p>
-    <p *ngIf="!prd.isoffered" class="fs-5 price">{{ prd.newPrice }}</p>
       <div *ngIf="prd.count === 0" class="badge bg-black position-absolute top-0 end-0 p-2 rounded-1 text-center">Out of Stock</div>
       <div *ngIf="prd.scale> 0" class="badge bg-danger position-absolute top-0 end-0  rounded-100 text-center">scale</div>
 
