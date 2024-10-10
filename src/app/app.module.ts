@@ -11,6 +11,8 @@ import { ProductFilterPipe } from './pipes/product-filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './Components/home/home.component';
 import { AboutComponent } from './Components/about/about.component';
+import { BlogsComponent } from './Components/blogs/blogs.component';
+import { BlogItemComponent } from './Components/blogs/blog-item/blog-item.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { AboutComponent } from './Components/about/about.component';
     PorductItemComponent,
     ProductFilterPipe,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    BlogsComponent,
+    BlogItemComponent
   ],
   imports: [
     BrowserModule,

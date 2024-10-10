@@ -1,0 +1,7 @@
+@import "../../../Sass/variables";
+
+.hov:hover {
+  transition: 1s color ;
+  color: $textcolor;
+  cursor: pointer;
+}
