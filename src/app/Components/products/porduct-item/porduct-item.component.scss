@@ -1,6 +1,6 @@
-
 @import "./../../../Sass/_variables";
 .card {
+  cursor: pointer;
   .card-title {
     transition: 0.3s;
     &:hover {
@@ -8,30 +8,42 @@
       cursor: pointer;
     }
   }
-  .price{
-    color: $color-price;
-  }
-
-.card {
-  .actions{
-    // transition: transform 0.3s ease;
-  }
-  &:hover{
+  .card-img {
+    overflow: hidden;
     .actions {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 3rem;
-      flex-wrap: wrap;
+      opacity: 0;
+      transition: 0.7s ease;
+      position: absolute;
+      bottom: -100px;
+      z-index: 1;
+    }
+    .backdrop {
+      transition: 0.5s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: transparent;
+      // z-index: 1;
+      // display: none;
     }
   }
-  // .card-img {
-  //   transition: filter 0.3s ease, transform 0.3s ease;
-  //   &:hover {
-  //     filter: blur(.5);
-  //     transform: scale(1.1);
-  //   }
-  // }
+  .price {
+    color: $color-price;
+  }
+  &:hover {
+    .card-img {
+      .actions {
+        bottom: 35% !important;
+        opacity: 1;
+
+      }
+      .backdrop {
+        background: #00000037;
+      }
+    }
+  }
 
   .card-action-btn {
     &:hover {
@@ -49,24 +61,24 @@
     }
   }
 }
-}
-.price{
+
+.price {
   color: $color-price;
 }
-.icon-container{
+.icon-container {
   width: 45px;
-    height: 45px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    svg{
-      transition: 0.3s;
+  height: 45px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  svg {
+    transition: 0.3s;
+  }
+  &:hover {
+    svg {
+      stroke: $color-text-secondry;
     }
-    &:hover{
-      svg{
-        stroke: $color-text-secondry;
-      }
-    }
+  }
 }

@@ -2,9 +2,9 @@
   <div class="card-img position-relative">
     <!-- Image container -->
     <img [src]="prd.image" alt="{{ prd.name }}" class=" w-100 h-100">
-
+    <div class="backdrop"></div>
     <!-- Action buttons centered over the image -->
-    <div class="d-flex w-100 justify-content-evenly align-items-center position-absolute flex-wrap top-50 start-50 translate-middle">
+    <div class="actions d-flex w-100 justify-content-evenly align-items-center position-absolute flex-wrap start-50 translate-middle">
       <div class="icon-container bg-white rounded-circle shadow-sm text-center">
         <button class="card-action-bt" aria-label="add to cart" title="add to cart">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
