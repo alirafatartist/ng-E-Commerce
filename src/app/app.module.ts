@@ -9,6 +9,8 @@ import { ProductsComponent } from './Components/products/products.component';
 import { PorductItemComponent } from './Components/products/porduct-item/porduct-item.component';
 import { ProductFilterPipe } from './pipes/product-filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './Components/home/home.component';
+import { AboutComponent } from './Components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FormsModule } from '@angular/forms';
     SidebarComponent,
     ProductsComponent,
     PorductItemComponent,
-    ProductFilterPipe
+    ProductFilterPipe,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
