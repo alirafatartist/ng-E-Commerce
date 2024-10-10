@@ -27,14 +27,12 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-body">
+<div class="modal fade p-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered p-0">
+    <div class="modal-content p-0">
+      <div class="modal-body p-0 position-relative">
+        <button type="button" class="btn bg-white position-absolute z-1 rounded-0" data-bs-dismiss="modal">X</button>
         <video controls class="w-100 h-100" autoplay>
-          <!-- <div class="modal-footer position-absolute bg-black top-0">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div> -->
           <source src="../../../assets/videos/small.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -42,3 +40,4 @@
     </div>
   </div>
 </div>
+

@@ -48,3 +48,21 @@ p {
   // display: none;
 }
 
+.modal {
+  background: transparent;
+
+  button {
+    cursor: pointer;
+    right: 0;
+  }
+  video {
+    border-radius: 0.3rem;
+    overflow: hidden;
+  }
+}
+.modal-body,
+.modal-dialog,
+.modal-content {
+  background: transparent;
+  border: 0;
+}
