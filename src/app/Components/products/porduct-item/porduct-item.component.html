@@ -1,11 +1,63 @@
+<<<<<<< HEAD
 <div class="card h-100 border-0 position-relative">
   <img [src]="prd.image" alt="{{ prd.name }}" class="card-img w-100 h-100">
   <div class="card-body text-center">
     <h6 class="card-title">{{ prd.name }}</h6>
     <p *ngIf="prd.isoffered" class="text-muted fs-5 d-flex justify-content-around">
+=======
+<div class="card h-100 shadow-sm border-0 rounded-lg position-relative overflow-hidden">
+  <div class="card-img position-relative">
+    <!-- Image container -->
+    <img [src]="prd.image" alt="{{ prd.name }}" class=" w-100 h-100">
+
+    <!-- Action buttons centered over the image -->
+    <div class="d-flex w-100 justify-content-evenly align-items-center position-absolute flex-wrap top-50 start-50 translate-middle">
+      <div class="icon-container bg-white rounded-circle shadow-sm text-center">
+        <button class="card-action-btn p-2" aria-label="add to cart" title="add to cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icon-tabler-circle-plus">
+            <path stroke="none" d="M0 0h20v20H0z" fill="none" />
+            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+            <path d="M9 12h6" />
+            <path d="M12 9v6" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="icon-container bg-white rounded-circle shadow-sm  text-center">
+        <button class="card-action-btn p-2" aria-label="add to cart" title="add to cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icon-tabler-shopping-bag">
+            <path stroke="none" d="M0 0h20v20H0z" fill="none" />
+            <path
+              d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" />
+            <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="icon-container bg-white rounded-circle shadow-sm  text-center">
+        <button class="card-action-btn  p-2" aria-label="add to wishlist" title="add to wishlist">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icon-tabler-heart">
+            <path stroke="none" d="M0 0h20v20H0z" fill="none" />
+            <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card-body text-center">
+    <h5 class="card-title">{{ prd.name }}</h5>
+    <p *ngIf="prd.isoffered" class="text-muted fs-5 d-flex justify-content-around flex-wrap">
+>>>>>>> 5e9682256b355852ddf7009ec09e3c94fa664db2
       <del class="opacity-50">{{ prd.oldPrice }}</del>
       <span class="price">{{ prd.newPrice }}</span>
     </p>
+<<<<<<< HEAD
     <p *ngIf="!prd.isoffered" class="fs-5 price">{{ prd.newPrice }}</p>
       <div *ngIf="prd.count === 0" class="badge bg-black position-absolute top-0 end-0 p-2 rounded-1 text-center">Out of Stock</div>
       <div *ngIf="prd.scale> 0" class="badge bg-danger position-absolute top-0 end-0  rounded-100 text-center">scale</div>
@@ -33,6 +85,12 @@
 
         Action Icons
       </ul> -->
+=======
+    <p *ngIf="!prd.isoffered" class="fs-5">{{ prd.newPrice }}</p>
+    <div *ngIf="prd.count === 0" class="badge bg-black position-absolute top-0 end-0 p-2 rounded-1 text-center">Out of
+      Stock</div>
+    <div *ngIf="prd.scale> 0" class="badge bg-danger position-absolute top-0 end-0  rounded-100 text-center">scale</div>
+>>>>>>> 5e9682256b355852ddf7009ec09e3c94fa664db2
 
   </div>
 </div>
