@@ -5,3 +5,22 @@
   color: $textcolor;
   cursor: pointer;
 }
+.card-title{
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media (max-width:765px){
+  .card-body{
+    font-size: 0.8rem;
+  }
+  .card-title{
+  max-width: 100px;
+    text-align: center;
+
+  }
+  .text-muted{
+    font-size: 0.5rem;
+  }
+}

@@ -1,6 +1,6 @@
 <section class="section Blogs mt-5 w-100" id="blog" aria-label="blog">
   <div class="container">
-    <div class="d-flex justify-content-between mb-5">
+    <div class="d-flex justify-content-between mb-3 mb-md-5">
       <h3 class="fw-bold">Explore our blog</h3>
       <div class="d-flex justify-content-between">
         <button class="btn ">View All
@@ -15,14 +15,20 @@
         </button>
       </div>
     </div>
-    <div class="row gy-3">
+    <div class="">
       <ng-container *ngIf="blogs.length > 0;">
-        <ng-container *ngFor="let blog of blogs ">
-          <div class="col-lg-4 col-md-6 col-sm-12">
+        <swiper-container slides-per-view="3" speed="300" loop="true" autoplay="true" css-mode="true" class="row justify-content-center align-items-center">
+          <ng-container *ngFor="let blog of blogs ">
+          <swiper-slide class="col-lg-4 col-md-6 col-sm-12">
+          <div >
             <app-blog-item [blg]="blog"></app-blog-item>
           </div>
+        </swiper-slide>
         </ng-container>
+      </swiper-container>
       </ng-container>
     </div>
   </div>
 </section>
+
+
