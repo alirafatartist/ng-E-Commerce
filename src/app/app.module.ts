@@ -1,4 +1,4 @@
-import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,13 +8,14 @@ import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { ProductsComponent } from './Components/products/products.component';
 import { PorductItemComponent } from './Components/products/porduct-item/porduct-item.component';
 import { ProductFilterPipe } from './pipes/product-filter.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './Components/home/home.component';
 import { AboutComponent } from './Components/about/about.component';
 import { BlogsComponent } from './Components/blogs/blogs.component';
 import { BlogItemComponent } from './Components/blogs/blog-item/blog-item.component';
 
 import { register } from 'swiper/element/bundle';
+import { HomePageComponent } from './Components/homepage/homepage.component';
 register();
 
 @NgModule({
@@ -28,16 +29,12 @@ register();
     HomeComponent,
     AboutComponent,
     BlogsComponent,
-    BlogItemComponent
+    BlogItemComponent,
+    HomePageComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
-  schemas:[CUSTOM_ELEMENTS_SCHEMA],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}

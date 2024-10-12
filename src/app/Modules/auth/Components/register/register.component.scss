@@ -1,0 +1,100 @@
+@import "../../../../Sass/_variables"
+;
+h1{
+  color:$color-text-secondry;
+}
+input:focus{
+  border-color: $color-text-secondry;
+  box-shadow:0 0 0 .25rem rgba($color-text-secondry, .25) ;
+
+}
+input::placeholder{
+  color: $color-placeholder;
+  font-size: 1rem;
+}
+button{
+  background: $color-text-secondry;
+  border: none;
+  width: 100%;
+
+  &:hover{
+    background: rgba($color-text-secondry, .80) !important;
+  }
+  &:active{
+    background: rgba($color-text-secondry, .80) !important;
+  }
+}
+button.register{
+  background: none;
+  text-decoration: underline;
+}
+
+img{
+  max-height: 100vh;
+  object-fit: cover;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.left-form{
+  padding-right: 1rem !important;
+}
+p
+{
+  a{
+    color: $color-text-secondry;
+  }
+}
+
+
+.ng-invalid.ng-touched{
+  border-color: rgb(255, 28, 81);
+}
+
+// @media (max-width:993px){
+//   .row{
+
+//     min-width: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     .left-form{
+//       height: 100%;
+//       width: 100%;
+//     }
+//   }
+// }
+
+@media (max-width: 993px) {
+  .row {
+    min-height: 100vh; // Ensure the row takes the full height of the viewport
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .left-form {
+      height: auto; // Allow the form to take the necessary height
+      width: 100%;
+      padding: 20px; // Add padding for better spacing
+    }
+  }
+}
+.disabled{
+  opacity: 0.3;
+  cursor: not-allowed;
+  background: $color-text-secondry;
+  border: none;
+  width: 100%;
+
+  &:hover{
+    background: rgba($color-text-secondry, .80) !important;
+  }
+  &:active{
+    background: rgba($color-text-secondry, .80) !important;
+  }
+}
+// @media (min-width: 994px) {
+//   .left-form {
+//     height: auto; // Ensure the form isn't stretched on larger screens
+//     width: 80%; // You can adjust this width as needed
+//   }
+// }
