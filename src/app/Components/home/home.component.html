@@ -8,11 +8,7 @@
           <p>Decoration</p>
         </div>
         <div class="overflow-hidden">
-          <img
-            src=".././../../assets/Images/products/hero-product-1.jpg"
-            alt=""
-            class="h-100 w-100"
-          />
+          <img src=".././../../assets/Images/products/hero-product-1.jpg" alt="" class="h-100 w-100" />
         </div>
       </div>
 
@@ -23,11 +19,7 @@
           <p>Decoration</p>
         </div>
         <div class="overflow-hidden">
-          <img
-            src=".././../../assets/Images/products/hero-product-2.jpg"
-            alt=""
-            class="h-100 w-100"
-          />
+          <img src=".././../../assets/Images/products/hero-product-2.jpg" alt="" class="h-100 w-100" />
         </div>
       </div>
 
@@ -38,11 +30,7 @@
           <p>Decoration</p>
         </div>
         <div class="overflow-hidden">
-          <img
-            src=".././../../assets/Images/products/hero-product-3.jpg"
-            alt=""
-            class="h-100 w-100"
-          />
+          <img src=".././../../assets/Images/products/hero-product-3.jpg" alt="" class="h-100 w-100" />
         </div>
       </div>
     </div>
@@ -56,11 +44,7 @@
           <p>Decoration</p>
         </div>
         <div class="overflow-hidden">
-          <img
-            src=".././../../assets/Images/products/hero-product-4.jpg"
-            alt=""
-            class="h-100 w-100"
-          />
+          <img src=".././../../assets/Images/products/hero-product-4.jpg" alt="" class="h-100 w-100" />
         </div>
       </div>
 
@@ -71,14 +55,19 @@
           <p>Decoration</p>
         </div>
         <div class="overflow-hidden">
-          <img
-            src=".././../../assets/Images/products/hero-product-5.jpg"
-            alt=""
-            class="h-100 w-100"
-          />
+          <img src=".././../../assets/Images/products/hero-product-5.jpg" alt="" class="h-100 w-100" />
         </div>
       </div>
-
+       <!-- Back to Top Button -->
+        <a
+        (click)="scrollToTop()"
+        *ngIf="isVisible"
+            aria-label="back to top"
+        >
+            <div class=" scroll d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-arrow-up text-white p-4 rounded-circle"></i>
+            </div>
+        </a>
     </div>
   </div>
 </div>

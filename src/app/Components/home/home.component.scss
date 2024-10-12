@@ -27,3 +27,13 @@ h5{
   right: 30px;
   z-index: 1;
 }
+.scroll{
+  .fa-arrow-up{
+    background-color:$color-text-secondry ;
+  }
+  position:fixed;
+  right: 2rem;
+   bottom: 2rem;
+   cursor: pointer;
+   z-index: 10;
+}
