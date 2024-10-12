@@ -1,24 +1,22 @@
 @import "../../../Sass/variables";
-
 .hov:hover {
-  transition: 1s color ;
+  transition: color 0.3s ease-in-out;
   color: $textcolor;
   cursor: pointer;
 }
 .card-title{
-  max-width: 300px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  overflow-wrap: break-word;
+}
+.card-body {
+  padding: 1rem;
+}
+
+.card-img-top {
+  object-fit: cover;
 }
 @media (max-width:765px){
   .card-body{
     font-size: 0.8rem;
-  }
-  .card-title{
-  max-width: 100px;
-    text-align: center;
-
   }
   .text-muted{
     font-size: 0.5rem;
