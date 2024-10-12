@@ -1,8 +1,8 @@
 <section class="section product" id="product" aria-label="product">
   <div class="container">
-    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5 flex-wrap gap-5 ">
       <h2 class="text-center">Popular Products</h2>
-      <div class="d-flex justify-content-center align-items-center">
+      <div class="d-flex justify-content-center align-items-center flex-wrap ">
         <button (click)="setSelectedType('All')" class="nav-link btn clk" [ngClass]="{'active':selectedType == 'All'}">All Products</button>
         <span class="separator mx-2">|</span>
         <button (click)="setSelectedType('Accessory')" class="nav-link btn clk" [ngClass]="{'active':selectedType == 'Accessory'}">Accessory</button>
@@ -17,7 +17,7 @@
         <ng-container *ngFor="let product of products | productFilter:selectedType">
           <div class="col-lg-3 col-md-4 col-sm-6">
             <app-porduct-item [prd]="product"></app-porduct-item>
-      
+
           </div>
         </ng-container>
       </ng-container>

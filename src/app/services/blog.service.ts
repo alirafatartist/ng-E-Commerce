@@ -27,13 +27,13 @@ blogs:IBlog[]=[
     date:'November 18, 2022',
     author:'Admin',
   },
-   {
-    title:'Woodex White Coated Staircase Floating ',
-    img:"assets/Images/blogs/blog-4.jpg",
-    place:'deco',
-    date:'October 18, 2022',
-    author:'Admin',
-  },
+  //  {
+  //   title:'Woodex White Coated Staircase Floating ',
+  //   img:"assets/Images/blogs/blog-4.jpg",
+  //   place:'deco',
+  //   date:'October 18, 2022',
+  //   author:'Admin',
+  // },
    {
     title:'Woodex Blue & White Striped Area ',
     img:"assets/Images/blogs/blog-2.jpg",

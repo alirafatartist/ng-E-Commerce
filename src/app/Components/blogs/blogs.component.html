@@ -1,12 +1,13 @@
-<section class="section Blogs mt-5 w-100" id="blog" aria-label="blog">
+<section class="section Blogs mt-5 w-100" id="blog" aria-label="Explore our blog">
   <div class="container">
-    <div class="d-flex justify-content-between mb-5">
+    <div class="d-flex justify-content-between mb-5 align-items-center flex-wrap">
       <h3 class="fw-bold">Explore our blog</h3>
-      <div class="d-flex justify-content-between">
-        <button class="btn ">View All
+      <div>
+        <button class="btn" aria-label="View all blogs">
+          View All
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
+            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right" aria-label="Arrow icon">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M5 12l14 0" />
             <path d="M15 16l4 -4" />
@@ -15,20 +16,25 @@
         </button>
       </div>
     </div>
-    <div class="">
-      <ng-container *ngIf="blogs.length > 0;">
-        <swiper-container slides-per-view="3" speed="300" loop="true" autoplay="true" css-mode="true" class="row justify-content-center align-items-center">
-          <ng-container *ngFor="let blog of blogs ">
+
+    <ng-container *ngIf="blogs.length > 0;">
+      <swiper-container slides-per-view="3" speed="300" loop="true" autoplay="true" css-mode="true"
+        aria-label="Blog posts carousel" class="row justify-content-center align-items-center"
+        [breakpoints]="{
+          '0': { 'slidesPerView': 1 },
+          '768': { 'slidesPerView': 2 },
+          '1024': { 'slidesPerView': 3 }
+        }">
+        <ng-container *ngFor="let blog of blogs">
           <swiper-slide class="col-lg-4 col-md-6 col-sm-12">
-          <div >
-            <app-blog-item [blg]="blog"></app-blog-item>
-          </div>
-        </swiper-slide>
+            <div class="w-100 d-flex align-items-center justify-content-center">
+              <app-blog-item [blg]="blog"></app-blog-item>
+            </div>
+          </swiper-slide>
         </ng-container>
       </swiper-container>
-      </ng-container>
-    </div>
+    </ng-container>
+
   </div>
-</section>
-
-
+</section
+>
