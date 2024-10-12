@@ -1,0 +1,15 @@
+@import "../../Sass/variables";
+.newsletter {
+  padding: 20px;
+  background-color:$color-light-white;
+}
+.email-field:focus{
+  &:focus {
+    outline: none;
+    border: 1px solid $color-price;
+  }
+}
+.newsletter-btn {
+  z-index: 4;
+}
+

@@ -1,0 +1,61 @@
+<section class="section newsletter px-3 py-4" aria-label="newsletter">
+  <div class="container">
+    <div class="newsletter-card">
+      <div class="card-content">
+        <h2 class="h2 section-title fw-bold">Our Newsletter</h2>
+        <p class="section-text">Subscribe to our newsletter and get 50% off</p>
+      </div>
+
+      <form (ngSubmit)="onSubmit(newsletterForm)" #newsletterForm="ngForm" class="position-relative" novalidate>
+        <input
+          type="email"
+          name="email_address"
+          ngModel
+          placeholder="Your email address"
+          required
+          class="email-field bg-white border-0 p-4 w-100"
+          #email="ngModel"
+          autocomplete="email"
+          aria-describedby="emailHelp"
+          [class.is-invalid]="email.invalid && email.touched"
+          [class.is-valid]="email.valid && email.touched"
+        />
+        <div *ngIf="email.invalid && email.touched" id="emailHelp">
+          <ng-container *ngIf="email.errors">
+            <small class="text-danger" *ngIf="email.errors['required']">
+              This field is required
+            </small>
+            <small class="text-danger" *ngIf="email.errors['email']">
+              Please enter a valid email address
+            </small>
+          </ng-container>
+        </div>
+
+        <button
+          type="submit"
+          class="newsletter-btn position-absolute end-0 top-0 h-100 px-4"
+          aria-label="subscribe"
+          [disabled]="!newsletterForm.valid"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M5 12h14" />
+            <path d="M13 18l6 -6" />
+            <path d="M13 6l6 6" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

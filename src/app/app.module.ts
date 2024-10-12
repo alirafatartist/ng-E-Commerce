@@ -16,6 +16,8 @@ import { BlogItemComponent } from './Components/blogs/blog-item/blog-item.compon
 
 import { register } from 'swiper/element/bundle';
 import { HomePageComponent } from './Components/homepage/homepage.component';
+import { NewsletterComponent } from './Components/newsletter/newsletter.component';
+import { FooterComponent } from './Components/footer/footer.component';
 register();
 
 @NgModule({
@@ -31,8 +33,10 @@ register();
     BlogsComponent,
     BlogItemComponent,
     HomePageComponent,
+    NewsletterComponent,
+    FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule,FormsModule],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
