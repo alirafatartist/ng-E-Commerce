@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +13,9 @@ import { HomeComponent } from './Components/home/home.component';
 import { AboutComponent } from './Components/about/about.component';
 import { BlogsComponent } from './Components/blogs/blogs.component';
 import { BlogItemComponent } from './Components/blogs/blog-item/blog-item.component';
+
+import { register } from 'swiper/element/bundle';
+register();
 
 @NgModule({
   declarations: [
@@ -30,9 +33,11 @@ import { BlogItemComponent } from './Components/blogs/blog-item/blog-item.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }
