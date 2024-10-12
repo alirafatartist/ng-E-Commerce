@@ -1,4 +1,32 @@
 @import "../../Sass/_variables";
+header{
+    /* search bar */
+.srch {
+  width: fit-content;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.srch input {
+  width: fit-content;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid $color-price;
+  &:focus{
+    border-bottom-color: $color-text-secondry;
+  }
+}
+
+.srch svg {
+  stroke: $color-price;
+  position: absolute;
+  right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+
+}
+}
 button {
   position: relative;
   svg {
@@ -21,4 +49,5 @@ button {
     line-height: 20px;
     font-size: 0.8rem;
   }
+
 }
