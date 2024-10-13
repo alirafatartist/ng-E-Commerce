@@ -35,7 +35,6 @@
       .actions {
         bottom: 35% !important;
         opacity: 1;
-
       }
       .backdrop {
         background: #00000037;
@@ -80,3 +79,17 @@
     }
   }
 }
+.add-to-wishlis{
+  &:active {
+    svg {
+      fill: $color-text-secondry;
+    }
+  }
+  &:focus {
+    svg {
+      fill: $color-text-secondry;
+      stroke: $color-text-secondry;
+    }
+  }
+}
+
