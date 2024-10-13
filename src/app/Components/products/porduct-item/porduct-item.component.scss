@@ -83,6 +83,7 @@
   &:active {
     svg {
       fill: $color-text-secondry;
+      stroke: $color-text-secondry;
     }
   }
   &:focus {
