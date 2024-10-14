@@ -6,7 +6,7 @@
         <p class="section-text">Subscribe to our newsletter and get 50% off</p>
       </div>
 
-      <form (ngSubmit)="onSubmit(newsletterForm)" #newsletterForm="ngForm" class="position-relative" novalidate>
+      <form (ngSubmit)="onSubmit(newsletterForm)" #newsletterForm="ngForm" class="position-relative">
         <input
           type="email"
           name="email_address"
@@ -33,7 +33,7 @@
 
         <button
           type="submit"
-          class="newsletter-btn position-absolute end-0 top-0 h-100 px-4"
+          class="newsletter-btn position-absolute end-0 top-0 h-100"
           aria-label="subscribe"
           [disabled]="!newsletterForm.valid"
         >

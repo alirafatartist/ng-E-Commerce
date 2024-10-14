@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
+  onSubmit(form: NgForm) {
+    if (form.errors) {
+      console.log('Please enter your email address.');
+    } else {
+      console.log('Form Data:', form.value);
+      form.resetForm();
+    }
+  }
 }

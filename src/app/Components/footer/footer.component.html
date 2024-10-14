@@ -1,1 +1,112 @@
-<p>footer works!</p>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+        <div>
+          <p class="fs-1 fw-bold">Woodex</p>
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>Woodex, Chicago, USA 2022</div>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+1234567890" class="hov">+1234567890</a>
+          </div>
+          <div class="d-flex gap-4">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <i class="fa-brands fa-facebook hov"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fa-brands fa-x-twitter hov"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Tumblr">
+              <i class="fa-brands fa-square-tumblr hov"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+        <p class="fs-5 fw-bold">Help & Information</p>
+        <div class="d-flex flex-column gap-3 justify-content-center">
+          <a href="#" class="footer-link hov">Help & Contact Us</a>
+          <a href="#" class="footer-link hov">Returns & Refunds</a>
+          <a href="#" class="footer-link hov">Online Stores</a>
+          <a href="#" class="footer-link hov">Terms & Conditions</a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+        <p class="fs-5 fw-bold">About Us</p>
+        <div class="d-flex flex-column gap-3 justify-content-center">
+          <a href="#" class="footer-link hov">About Us</a>
+          <a href="#" class="footer-link hov">What We Do</a>
+          <a href="#" class="footer-link hov">FAQ Page</a>
+          <a href="#" class="footer-link hov">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+        <p class="fs-5 fw-bold">Newsletter</p>
+        <div class="d-flex flex-column gap-3 justify-content-center">
+          <form (ngSubmit)="onSubmit(footerForm)" #footerForm="ngForm" class="position-relative">
+            <label for="email_address" class="visually-hidden">Email address</label>
+            <input
+              type="email"
+              name="email_address"
+              ngModel
+              placeholder="Your email address"
+              required
+              class="email-field bg-white rounded-2 border-0 w-100 p-4"
+              #email="ngModel"
+              autocomplete="email"
+              aria-describedby="emailHelp"
+              [class.is-invalid]="email.invalid && email.touched"
+              [class.is-valid]="email.valid && email.touched"
+            />
+            <div>
+              <div *ngIf="email.invalid && email.touched">
+                <ng-container *ngIf="email.errors">
+                  <small class="text-danger" *ngIf="email.errors['required']">
+                    The email is required
+                  </small>
+                  <small class="text-danger" *ngIf="email.errors['email']">
+                    Email not correct
+                  </small>
+                </ng-container>
+              </div>
+            </div>
+
+
+            <button
+              type="submit"
+              class="footer-btn position-absolute end-0 top-0 h-100 px-3"
+              aria-label="subscribe"
+              [disabled]="!footerForm.valid"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12h14" />
+                <path d="M13 18l6 -6" />
+                <path d="M13 6l6 6" />
+              </svg>
+            </button>
+          </form>
+
+
+          <div class="d-flex justify-content-around mt-3 gap-3">
+            <a href="#" class="footer-link hov">Terms & Conditions</a>
+            <a href="#" class="footer-link hov">Privacy Policy</a>
+            <a href="#" class="footer-link hov">Map</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <p class="copyright">
+        &copy; 2022 All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>.
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,18 @@
+@import "../../Sass/variables";
+a{
+  color: $color-text;
+}
+.email-field:focus{
+  &:focus {
+    outline: none;
+    border: 1px solid $color-price;
+  }
+}
+.footer-btn {
+  z-index: 4;
+}
+.hov:hover {
+  transition: color 0.3s ease-in-out;
+  color: $textcolor;
+  cursor: pointer;
+}
