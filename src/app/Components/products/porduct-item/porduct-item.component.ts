@@ -7,4 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class PorductItemComponent {
   @Input({required:true})prd:any;
+
+  isActive:boolean=false;
+  toggleActive() {
+    this.isActive = !this.isActive; // Toggle the active state
+  }
 }

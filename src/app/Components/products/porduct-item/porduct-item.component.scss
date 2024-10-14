@@ -79,18 +79,40 @@
     }
   }
 }
-.add-to-wishlis{
-  &:active {
-    svg {
-      fill: $color-text-secondry;
-      stroke: $color-text-secondry;
-    }
-  }
-  &:focus {
-    svg {
-      fill: $color-text-secondry;
-      stroke: $color-text-secondry;
-    }
+// .add-to-wishlis{
+//   &:active {
+//     svg {
+//       fill: $color-text-secondry;
+//       stroke: $color-text-secondry;
+//       &:active{
+//         fill: $color-text-secondry;
+//         stroke: $color-text-secondry;
+//       }
+//       &:focus{
+//         fill: $color-text-secondry;
+//         stroke: $color-text-secondry;
+//       }
+//     }
+//   }
+//   &:focus {
+//     svg {
+//       fill: $color-text-secondry;
+//       stroke: $color-text-secondry;
+//       &:active{
+//         fill: $color-text-secondry;
+//         stroke: $color-text-secondry;
+//       }
+//       &:focus{
+//         fill: $color-text-secondry;
+//         stroke: $color-text-secondry;
+//       }
+//     }
+//   }
+// }
+
+.add-to-wishlis.active {
+  svg {
+    fill: $color-text-secondry;
+    stroke: $color-text-secondry;
   }
 }
-
