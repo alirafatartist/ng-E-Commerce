@@ -21,6 +21,9 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { ToastrModule } from 'ngx-toastr';
 register();
 
+import firebaseConfig  from '../env/firebase.config';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +40,7 @@ register();
     NewsletterComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule,FormsModule,ToastrModule.forRoot()],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule,FormsModule,ToastrModule.forRoot(),],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

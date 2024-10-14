@@ -6,7 +6,7 @@
       <h1 class="fw-bold mb-5">Woodex</h1>
       <h3 class="fw-normal text-black" style="letter-spacing: 1px">Log in</h3>
 
-      <form class="w-100" [formGroup]="login" (ngSubmit)="loginUser()">
+      <form class="w-100" [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
         <div data-mdb-input-init class="form-outline mb-4">
           <label class="form-label" for="email">Email address</label>
           <input
@@ -14,27 +14,27 @@
             id="email"
             class="form-control form-control-lg"
             [class.is-invalid]="
-              login.get('email')?.invalid && login.get('email')?.touched
+              loginForm.get('email')?.invalid && loginForm.get('email')?.touched
             "
             [class.is-valid]="
-              login.get('email')?.valid && login.get('email')?.touched
+              loginForm.get('email')?.valid && loginForm.get('email')?.touched
             "
             formControlName="email"
             placeholder="email"
             required
           />
           <div
-            *ngIf="login.get('email')?.invalid && login.get('email')?.touched"
+            *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched"
           >
-            <ng-container *ngIf="login.get('email')?.errors">
+            <ng-container *ngIf="loginForm.get('email')?.errors">
               <p
-                *ngIf="login.get('email')?.errors?.['email']"
+                *ngIf="loginForm.get('email')?.errors?.['email']"
                 class="text-danger p-0 m-0"
               >
                 Invalid email address.
               </p>
               <p
-                *ngIf="login.get('email')?.errors?.['required']"
+                *ngIf="loginForm.get('email')?.errors?.['required']"
                 class="text-danger p-0 m-0"
               >
                 Email address is required.
@@ -50,10 +50,10 @@
             id="pass"
             class="form-control form-control-lg"
             [class.is-invalid]="
-              login.get('password')?.invalid && login.get('password')?.touched
+              loginForm.get('password')?.invalid && loginForm.get('password')?.touched
             "
             [class.is-valid]="
-              login.get('password')?.valid && login.get('password')?.touched
+              loginForm.get('password')?.valid && loginForm.get('password')?.touched
             "
             formControlName="password"
             placeholder="password"
@@ -61,12 +61,12 @@
           />
           <div
             *ngIf="
-              login.get('password')?.invalid && login.get('password')?.touched
+              loginForm.get('password')?.invalid && loginForm.get('password')?.touched
             "
           >
-            <ng-container *ngIf="login.get('password')?.errors">
+            <ng-container *ngIf="loginForm.get('password')?.errors">
               <p
-                *ngIf="login.get('password')?.errors?.['required']"
+                *ngIf="loginForm.get('password')?.errors?.['required']"
                 class="text-danger p-0 m-0"
               >
                 Password is required.
@@ -81,8 +81,8 @@
             data-mdb-ripple-init
             class="btn btn-info btn-lg text-white"
             type="submit"
-            [disabled]="!login.valid"
-            [ngClass]="!login.valid ? 'disabled' : ''"
+            [disabled]="!loginForm.valid"
+            [ngClass]="!loginForm.valid ? 'disabled' : ''"
           >
             Log in
           </button>

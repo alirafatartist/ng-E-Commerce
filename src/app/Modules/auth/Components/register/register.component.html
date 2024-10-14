@@ -3,10 +3,8 @@
     <div
       class="left-form px-4 col-md-6 d-flex flex-column justify-content-center align-items-center"
     >
-    <h1 class="fw-bold mb-5">Woodex</h1>
-      <h3 class="fw-normal text-black" style="letter-spacing: 1px">
-        Register
-      </h3>
+      <h1 class="fw-bold mb-5">Woodex</h1>
+      <h3 class="fw-normal text-black" style="letter-spacing: 1px">Register</h3>
 
       <form
         [formGroup]="registerForm"
@@ -20,10 +18,12 @@
             id="name"
             class="form-control form-control-lg"
             [class.is-invalid]="
-              registerForm.get('userName')?.invalid && registerForm.get('userName')?.touched
+              registerForm.get('userName')?.invalid &&
+              registerForm.get('userName')?.touched
             "
             [class.is-valid]="
-              registerForm.get('userName')?.valid && registerForm.get('userName')?.touched
+              registerForm.get('userName')?.valid &&
+              registerForm.get('userName')?.touched
             "
             placeholder="name"
             formControlName="userName"
@@ -36,8 +36,18 @@
             "
           >
             <ng-container *ngIf="registerForm.get('userName')?.errors">
-              <p *ngIf="registerForm.get('userName')?.errors?.['minlength']" class="text-danger p-0 m-0">Name must be at least 3 characters long.</p>
-              <p *ngIf="registerForm.get('userName')?.errors?.['required']" class="text-danger p-0 m-0">Your name is required.</p>
+              <p
+                *ngIf="registerForm.get('userName')?.errors?.['minlength']"
+                class="text-danger p-0 m-0"
+              >
+                Name must be at least 3 characters long.
+              </p>
+              <p
+                *ngIf="registerForm.get('userName')?.errors?.['required']"
+                class="text-danger p-0 m-0"
+              >
+                Your name is required.
+              </p>
             </ng-container>
           </div>
         </div>
@@ -49,10 +59,12 @@
             id="email"
             class="form-control form-control-lg"
             [class.is-invalid]="
-              registerForm.get('email')?.invalid && registerForm.get('email')?.touched
+              registerForm.get('email')?.invalid &&
+              registerForm.get('email')?.touched
             "
             [class.is-valid]="
-              registerForm.get('email')?.valid && registerForm.get('email')?.touched
+              registerForm.get('email')?.valid &&
+              registerForm.get('email')?.touched
             "
             placeholder="email"
             formControlName="email"
@@ -65,8 +77,18 @@
             "
           >
             <ng-container *ngIf="registerForm.get('email')?.errors">
-              <p *ngIf="registerForm.get('email')?.errors?.['email']" class="text-danger p-0 m-0">Invalid email address.</p>
-              <p *ngIf="registerForm.get('email')?.errors?.['required']" class="text-danger p-0 m-0">Email address is required.</p>
+              <p
+                *ngIf="registerForm.get('email')?.errors?.['email']"
+                class="text-danger p-0 m-0"
+              >
+                Invalid email address.
+              </p>
+              <p
+                *ngIf="registerForm.get('email')?.errors?.['required']"
+                class="text-danger p-0 m-0"
+              >
+                Email address is required.
+              </p>
             </ng-container>
           </div>
         </div>
@@ -78,10 +100,12 @@
             id="pass"
             class="form-control form-control-lg"
             [class.is-invalid]="
-              registerForm.get('password')?.invalid && registerForm.get('password')?.touched
+              registerForm.get('password')?.invalid &&
+              registerForm.get('password')?.touched
             "
             [class.is-valid]="
-              registerForm.get('password')?.valid && registerForm.get('password')?.touched
+              registerForm.get('password')?.valid &&
+              registerForm.get('password')?.touched
             "
             placeholder="password"
             formControlName="password"
@@ -94,7 +118,18 @@
             "
           >
             <ng-container *ngIf="registerForm.get('password')?.errors">
-              <p *ngIf="registerForm.get('password')?.errors?.['required']" class="text-danger p-0 m-0">Password is required.</p>
+              <p
+                *ngIf="registerForm.get('password')?.errors?.['required']"
+                class="text-danger p-0 m-0"
+              >
+                Password is required.
+              </p>
+              <p
+                *ngIf="registerForm.get('password')?.errors?.['minlength']"
+                class="text-danger p-0 m-0"
+              >
+                Password must be at least 6 characters long.
+              </p>
             </ng-container>
           </div>
         </div>
@@ -105,7 +140,7 @@
             data-mdb-ripple-init
             class="btn btn-lg text-white"
             type="submit"
-            [ngClass]="!registerForm.valid?'disabled':''"
+            [ngClass]="!registerForm.valid ? 'disabled' : ''"
             [disabled]="!registerForm.valid"
           >
             Sign up
