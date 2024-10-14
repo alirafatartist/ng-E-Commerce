@@ -18,6 +18,7 @@ import { register } from 'swiper/element/bundle';
 import { HomePageComponent } from './Components/homepage/homepage.component';
 import { NewsletterComponent } from './Components/newsletter/newsletter.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { ToastrModule } from 'ngx-toastr';
 register();
 
 @NgModule({
@@ -36,7 +37,7 @@ register();
     NewsletterComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule,FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule,FormsModule,ToastrModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
