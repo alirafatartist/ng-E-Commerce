@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { auth } from '../../../../../env/firebase.config';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { AuthGuardService } from '../../../../Services/authGuard.service';
+import { AuthGuardService } from '../../../../Services/authguard.service';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +14,7 @@ import { AuthGuardService } from '../../../../Services/authGuard.service';
 export class LoginComponent {
   private _authService = inject(AuthGuardService);
 
-  constructor(private router: Router, private toastr: ToastrService,) {}
+  constructor(private router: Router, private toastr: ToastrService) {}
 
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -43,7 +43,7 @@ export class LoginComponent {
           const user = userCredential.user;
           console.log('User logged in successfully:', user);
           this.successLogin();
-          this._authService.login()
+          this._authService.login();
           // Navigate to home page or dashboard
           setTimeout(() => {
             this.router.navigate(['/homepage']); // Adjust this route as needed

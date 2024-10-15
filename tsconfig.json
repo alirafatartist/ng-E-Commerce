@@ -28,5 +28,14 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.html",
+    "src/**/*.css"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
