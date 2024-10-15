@@ -13,7 +13,7 @@ import { AuthGuardService } from '../../../../Services/authGuard.service';
 })
 export class LoginComponent {
 
-  constructor(private router: Router, private toastr: ToastrService, private _authService:AuthGuardService) {}
+  constructor(private router: Router, private toastr: ToastrService, private _authService:AuthGuardService,) {}
 
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
