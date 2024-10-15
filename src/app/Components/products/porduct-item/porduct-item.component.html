@@ -52,29 +52,6 @@
       <div *ngIf="prd.count === 0" class="badge bg-black position-absolute top-0 end-0 p-2 rounded-1 text-center">Out of Stock</div>
       <div *ngIf="prd.scale> 0" class="badge bg-danger position-absolute top-0 end-0  rounded-100 text-center">scale</div>
 
-
-
-      <!-- <ul class="card-action-list d-none">
-        <li>
-          <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-            <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-          </button>
-        </li>
-
-        <li>
-          <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-          </button>
-        </li>
-        <ion-icon name="heart"></ion-icon>
-        <li>
-          <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
-            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-          </button>
-        </li>
-
-        Action Icons
-      </ul> -->
     <p *ngIf="!prd.isoffered" class="fs-5 price">{{ prd.newPrice }}</p>
     <div *ngIf="prd.count === 0" class="badge bg-black position-absolute top-0 end-0 p-2 rounded-1 text-center">Out of
       Stock</div>
