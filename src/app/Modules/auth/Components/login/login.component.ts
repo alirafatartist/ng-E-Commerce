@@ -20,7 +20,6 @@ export class LoginComponent {
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required]),
   });
-
   successLogin() {
     this.toastr.success('You have successfully logged in!', '', {
       timeOut: 3000,
