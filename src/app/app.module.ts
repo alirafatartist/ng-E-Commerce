@@ -19,7 +19,6 @@ import { HomePageComponent } from './Components/homepage/homepage.component';
 import { NewsletterComponent } from './Components/newsletter/newsletter.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { ToastrModule } from 'ngx-toastr';
-import { AuthGuardService } from './Services/authGuard.service';
 register();
 
 
@@ -48,7 +47,7 @@ register();
     FormsModule,
     ToastrModule.forRoot(),
   ],
-  providers: [AuthGuardService],
+  providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
