@@ -12,8 +12,9 @@ import { AuthGuardService } from '../../../../Services/authGuard.service';
   styleUrl: './login.component.scss',
 })
 export class LoginComponent {
+  private _authService = inject(AuthGuardService);
 
-  constructor(private router: Router, private toastr: ToastrService, private _authService:AuthGuardService,) {}
+  constructor(private router: Router, private toastr: ToastrService,) {}
 
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),

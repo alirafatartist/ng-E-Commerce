@@ -8,8 +8,8 @@ import { Router } from '@angular/router';
   styleUrl: './sidebar.component.scss'
 })
 export class SidebarComponent {
-  _authService = inject(AuthGuardService)
-  _router = inject(Router)
+  _authService:AuthGuardService = inject(AuthGuardService)
+  _router:Router = inject(Router)
   logout(){
     this._authService.logout()
     this._router.navigate(['/auth/login'])
