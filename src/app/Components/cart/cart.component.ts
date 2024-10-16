@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CartService } from '../../Services/cart.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-cart',
@@ -10,30 +11,31 @@ export class CartComponent {
   products: any[] = []; // Store the cart products
   totalPrice: number = 0; // Total price of all products
 
-  constructor(private _cartService: CartService) {}
+  constructor(private _cartService: CartService,private toastr: ToastrService) {}
 
   ngOnInit(): void {
-    this.products = this._cartService.getProducts(); // Retrieve products from the service
-    this.calculateTotalPrice(); // Calculate the initial total price
+    this.products = this._cartService.getProducts();
+    this.calculateTotalPrice();
     console.log(this.calculateTotalPrice());
   }
 
   increase(product: any) {
-    product.amount++; // Increase the individual product amount
-    this.calculateTotalPrice(); // Recalculate total price
+    product.amount++;
+    this.calculateTotalPrice();
   }
 
   decrease(product: any) {
     if (product.amount > 1) {
-      product.amount--; // Decrease the individual product amount
-      this.calculateTotalPrice(); // Recalculate total price
+      product.amount--;
+      this.calculateTotalPrice();
     }
   }
 
   remove(product: any) {
-    this._cartService.removeProduct(product); // Call the service to remove the product
-    this.products = this._cartService.getProducts(); // Refresh products from the service
-    this.calculateTotalPrice(); // Recalculate total price after removal
+    this._cartService.removeProduct(product);
+    this.products = this._cartService.getProducts();
+    this.calculateTotalPrice();
+    this.productRemoved()
   }
 
   calculateTotalPrice() {
@@ -42,5 +44,18 @@ export class CartComponent {
       const price = parseFloat(product.newPrice.replace('$', '').replace(',', ''));
       return total + (price * product.amount); // Use parsed price for calculations
     }, 0);
+  }
+
+
+  productRemoved() {
+    this.toastr.error('Product Removed', '', {
+      timeOut: 3000,
+      easing: 'ease-in',
+      easeTime: 300,
+      progressBar: true,
+      closeButton: true,
+      progressAnimation: 'decreasing',
+      toastClass: 'ngx-toastr',
+    });
   }
 }
