@@ -50,13 +50,16 @@
         <p class="fs-5 fw-bold">Newsletter</p>
         <div class="d-flex flex-column gap-3 justify-content-center">
           <form (ngSubmit)="onSubmit(footerForm)" #footerForm="ngForm" class="position-relative">
+            <!-- Email Input Field -->
             <label for="email_address" class="visually-hidden">Email address</label>
             <input
               type="email"
+              id="email_address"
               name="email_address"
               ngModel
               placeholder="Your email address"
               required
+              email
               class="email-field bg-white rounded-2 border-0 w-100 p-4"
               #email="ngModel"
               autocomplete="email"
@@ -64,27 +67,38 @@
               [class.is-invalid]="email.invalid && email.touched"
               [class.is-valid]="email.valid && email.touched"
             />
-            <div>
-              <div *ngIf="email.invalid && email.touched">
-                <ng-container *ngIf="email.errors">
-                  <small class="text-danger" *ngIf="email.errors['required']">
-                    The email is required
-                  </small>
-                  <small class="text-danger" *ngIf="email.errors['email']">
-                    Email not correct
-                  </small>
-                </ng-container>
-              </div>
+
+            <!-- Error Messages -->
+            <div *ngIf="email.invalid && email.touched">
+              <ng-container *ngIf="email.errors">
+                <small class="text-danger" *ngIf="email.errors['required']">
+                  The email is required
+                </small>
+                <small class="text-danger" *ngIf="email.errors['email']">
+                  Email not correct
+                </small>
+              </ng-container>
             </div>
 
-
+            <!-- Submit Button -->
             <button
               type="submit"
               class="footer-btn position-absolute end-0 top-0 h-100 px-3"
               aria-label="subscribe"
               [disabled]="!footerForm.valid"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
+              >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M5 12h14" />
                 <path d="M13 18l6 -6" />
@@ -92,6 +106,7 @@
               </svg>
             </button>
           </form>
+
 
 
           <div class="d-flex justify-content-around mt-3 gap-3">

@@ -1,0 +1,48 @@
+header .srch {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 30px;
+  border-radius: 10px;
+}
+header .srch input {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #666666;
+}
+header .srch input:focus {
+  border-bottom-color: #C58F63;
+}
+header .srch svg {
+  stroke: #666666;
+  position: absolute;
+  right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+button {
+  position: relative;
+}
+button svg {
+  stroke: #121212;
+  transition: 0.3s;
+}
+button:hover {
+  color: #C58F63;
+}
+button:hover svg {
+  stroke: #C58F63;
+}
+button .counter {
+  background: #C58F63;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  bottom: -10px;
+  right: -10px;
+  line-height: 20px;
+  font-size: 0.8rem;
+}/*# sourceMappingURL=navbar.component.css.map */

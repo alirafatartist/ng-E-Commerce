@@ -1,0 +1,32 @@
+.offcanvas {
+  width: 350px;
+}
+
+.btn-close {
+  left: -1rem;
+}
+
+.links .link {
+  font-size: 1.4rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+.links .link a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.contact-info p {
+  color: #666666;
+}
+
+.fa-brands {
+  transition: 0.3s;
+}
+.fa-brands:hover {
+  color: #C58F63;
+}
+
+.offcanvas-body {
+  overflow: auto;
+}/*# sourceMappingURL=sidebar.component.css.map */

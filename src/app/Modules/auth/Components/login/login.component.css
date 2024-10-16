@@ -1,0 +1,83 @@
+h1 {
+  color: #C58F63;
+}
+
+input:focus {
+  border-color: #C58F63;
+  box-shadow: 0 0 0 0.25rem rgba(197, 143, 99, 0.25);
+}
+
+input::-moz-placeholder {
+  color: #999999;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #999999;
+  font-size: 1rem;
+}
+
+button {
+  background: #C58F63;
+  border: none;
+  width: 100%;
+}
+button:hover {
+  background: rgba(197, 143, 99, 0.8) !important;
+}
+button:active {
+  background: rgba(197, 143, 99, 0.8) !important;
+}
+
+button.register {
+  background: none;
+  text-decoration: underline;
+}
+
+img {
+  max-height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.left-form {
+  padding-left: 2rem;
+}
+
+p a {
+  color: #C58F63;
+}
+
+.ng-invalid.ng-touched {
+  border-color: rgb(255, 28, 81);
+}
+
+.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  background: #C58F63;
+  border: none;
+  width: 100%;
+}
+.disabled:hover {
+  background: rgba(197, 143, 99, 0.8) !important;
+}
+.disabled:active {
+  background: rgba(197, 143, 99, 0.8) !important;
+}
+
+@media (max-width: 993px) {
+  .row {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .row .left-form {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=login.component.css.map */
