@@ -16,6 +16,7 @@ export class ProductService {
       scale:-10,
       count:20,
       Type:'Decoration',
+      amount: 1
     },
     {
       image:"assets/Images/products/product-2.jpg",
@@ -26,7 +27,7 @@ export class ProductService {
       scale:0,
       count:0,
       Type:'Accessory',
-
+      amount: 1
     },
     {
       image:"assets/Images/products/product-3.jpg",
@@ -36,7 +37,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Decoration',
-
+      amount: 1
     },
     {
       image:"assets/Images/products/product-4.jpg",
@@ -46,6 +47,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Accessory',
+      amount: 1
     },
     {
       image:"assets/Images/products/product-5.jpg",
@@ -55,6 +57,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Accessory',
+      amount: 1
     },
     {
       image:"assets/Images/products/product-6.jpg",
@@ -64,6 +67,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Furniture',
+      amount: 1
     },
     {
       image:"assets/Images/products/product-7.jpg",
@@ -73,7 +77,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Decoration',
-
+      amount: 1
     },
     {
       image:"assets/Images/products/product-8.jpg",
@@ -83,6 +87,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Accessory',
+      amount: 1
     }, {
       image:"assets/Images/products/product-9.jpg",
       name:'Living Room & Bedroom Lights',
@@ -91,6 +96,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Accessory',
+      amount: 1
     }, {
       image:"assets/Images/products/product-10.jpg",
       name:'Nancy Chair',
@@ -99,6 +105,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Furniture',
+      amount: 1
     }, {
       image:"assets/Images/products/product-11.jpg",
       name:'Simple Chair',
@@ -107,6 +114,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Furniture',
+      amount: 1
     }, {
       image:"assets/Images/products/product-12.jpg",
       name:'Smooth Disk',
@@ -115,7 +123,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Decoration',
-
+      amount: 1
     },
     {
       image:"assets/Images/products/product-13.jpg",
@@ -125,6 +133,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Furniture',
+      amount: 1
     },
     {
       image:"assets/Images/products/product-14.jpg",
@@ -134,6 +143,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Furniture',
+      amount: 1
     },
     {
       image:"assets/Images/products/product-15.jpg",
@@ -143,6 +153,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Accessory',
+      amount: 1
     },
     {
       image:"assets/Images/products/product-16.jpg",
@@ -152,6 +163,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Accessory',
+      amount: 1
     },
     {
       image:"assets/Images/products/product-17.jpg",
@@ -161,7 +173,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Decoration',
-
+      amount: 1
     },
     {
       image:"assets/Images/products/product-18.jpg",
@@ -171,6 +183,7 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Furniture',
+      amount: 1
     },
     {
       image:"assets/Images/products/product-19.jpg",
@@ -180,8 +193,10 @@ export class ProductService {
       isoffered:false,
       scale:0,
       Type:'Decoration',
+      amount: 1
     },
   ]
+
   getProducts(){
     return this.products;
   }

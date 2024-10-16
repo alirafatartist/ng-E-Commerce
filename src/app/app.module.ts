@@ -19,6 +19,7 @@ import { HomePageComponent } from './Components/homepage/homepage.component';
 import { NewsletterComponent } from './Components/newsletter/newsletter.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { ToastrModule } from 'ngx-toastr';
+import { CartComponent } from './Components/cart/cart.component';
 register();
 
 
@@ -38,6 +39,7 @@ register();
     HomePageComponent,
     NewsletterComponent,
     FooterComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,

@@ -7,8 +7,8 @@ export class AuthGuardService {
  private _isLogged: boolean = false;
 
   constructor() {
-    // const storedLoginStatus = localStorage.getItem('isLogged');
-    this._isLogged = true;
+    const storedLoginStatus = localStorage.getItem('isLogged');
+    this._isLogged = storedLoginStatus == 'true';
   }
 
   get isLogged(): boolean {
@@ -17,11 +17,11 @@ export class AuthGuardService {
 
   login() {
     this._isLogged = true;
-    // localStorage.setItem("isLogged",'true')
+    localStorage.setItem("isLogged",'true')
   }
 
   logout() {
     this._isLogged = false;
-    // localStorage.removeItem("isLogged")
+    localStorage.removeItem("isLogged")
   }
 }

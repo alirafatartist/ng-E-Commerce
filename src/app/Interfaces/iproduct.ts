@@ -7,4 +7,5 @@ export interface IProduct {
   scale: number,
   count?: number,
   Type: 'Decoration' | 'Accessory' | 'Furniture',
+  amount:number
 }

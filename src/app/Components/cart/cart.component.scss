@@ -1,0 +1,31 @@
+@import "../../Sass/_variables";
+.left {
+  div {
+    .img-wrapper {
+      width: 100px;
+    }
+  }
+}
+// .remove {
+//   color: $color-text-secondry;
+//   i {
+//     color: $color-text-secondry;
+//   }
+// }
+.right{
+  button{
+    padding:0.5rem 1rem;
+    border-radius: 0.4rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    &.increase{
+    border: 1px solid #27d383;
+    }
+    &.decrease{
+    border: 1px solid #ff1c51;
+    }
+  }
+}
+.t-price{
+  color: $color-text-secondry;
+}

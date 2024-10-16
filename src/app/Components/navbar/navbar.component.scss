@@ -1,6 +1,6 @@
 @import "../../Sass/_variables";
 header{
-    
+
 .srch {
   width: fit-content;
   height: 30px;
@@ -50,4 +50,7 @@ button {
     font-size: 0.8rem;
   }
 
+}
+h1{
+  cursor: pointer;
 }

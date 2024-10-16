@@ -1,15 +1,23 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
+import { CartService } from '../../../Services/cart.service';
 
 @Component({
   selector: 'app-porduct-item',
   templateUrl: './porduct-item.component.html',
-  styleUrl: './porduct-item.component.scss'
+  styleUrls: ['./porduct-item.component.scss'],
 })
 export class PorductItemComponent {
-  @Input({required:true})prd:any;
+  _cartservice = inject(CartService);
+  @Input({ required: true }) prd: any;
 
-  isActive:boolean=false;
+  isActive: boolean = false;
+
   toggleActive() {
     this.isActive = !this.isActive; // Toggle the active state
+  }
+
+  addTocart(product: any) {
+    console.log(product);
+    this._cartservice.addToProducts(product); // Add the product to the cart
   }
 }

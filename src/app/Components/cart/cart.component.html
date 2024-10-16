@@ -1,0 +1,35 @@
+<div class="container">
+  <app-navbar />
+  <app-sidebar />
+  <div class="mt-4 bg-body-tertiary p-4">
+    <div>
+      <h1>Shop Cart</h1>
+      <p>Total price <span class="t-price fw-bold">{{totalPrice}}</span> $</p>
+    </div>
+    <div class="products-wrapper d-flex flex-column gap-3">
+      <div *ngFor="let product of products" class="product d-flex justify-content-between">
+        <div class="left">
+          <div class="d-flex gap-2 align-items-center">
+            <div class="img-wrapper">
+              <img [src]="product.image" alt="" class="w-100 h-100" /> <!-- Ensure you use the correct product property -->
+            </div>
+            <div>
+              <h5>{{ product.name }}</h5> <!-- Adjust based on your product properties -->
+              <p>Price: <span>{{ product.newPrice }}</span> $</p>
+              <button class="remove text-danger" (click)="remove(product)">
+                <i class="fa-solid fa-trash-can text-danger"></i> Remove
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="right d-flex gap-4 align-items-center">
+          <button class="increase" (click)="increase(product)">+</button>
+          <span>{{ product.amount }}</span>
+          <button class="decrease" (click)="decrease(product)">-</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
