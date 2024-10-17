@@ -1,5 +1,5 @@
 <header class="d-flex justify-content-between align-items-center flex-wrap  p-2 position-sticky w-100 top-0 z-3 bg-white">
-  <div class="srch position-relative d-flex align-items-center mb-4">
+  <div class="srch position-relative d-md-flex align-items-center mb-4 d-none">
     <input type="text" id="search" name="query" placeholder="Search Anything...">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -18,12 +18,12 @@
         <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
       </svg>
     </button>
-    <button>
+    <button routerLink="/wishlist">
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
         <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
       </svg>
-      <div class="counter fav-counter rounded-circle position-absolute">0</div>
+      <div class="counter fav-counter rounded-circle position-absolute">{{productsWishlistcount}}</div>
     </button>
     <button routerLink="/cart">
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -33,7 +33,7 @@
         <path d="M17 17h-11v-14h-2" />
         <path d="M6 5l14 1l-1 7h-13" />
       </svg>
-      <div class="counter addcart-counter rounded-circle position-absolute">{{productsCount}}</div>
+      <div class="counter addcart-counter rounded-circle position-absolute">{{productsCartcount}}</div>
     </button>
     <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-deep" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">

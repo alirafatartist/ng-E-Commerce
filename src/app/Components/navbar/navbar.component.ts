@@ -1,3 +1,4 @@
+import { WishlistService } from './../../Services/wishlist.service';
 import { Component, inject } from '@angular/core';
 import { CartService } from '../../Services/cart.service';
 
@@ -7,13 +8,19 @@ import { CartService } from '../../Services/cart.service';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  productsCount: number = 0;
+  productsCartcount: number = 0;
+  productsWishlistcount: number = 0;
   _cartService: CartService = inject(CartService);
+  _wishlistservice :WishlistService = inject(WishlistService);
 
   ngOnInit(): void {
     // Subscribe to the cart count updates
     this._cartService.productsCount$.subscribe((count) => {
-      this.productsCount = count; // Update the count in the navbar
+      this.productsCartcount = count; // Update the count in the navbar
+    });
+    this._wishlistservice.productsCount$.subscribe((count) => {
+      this.productsWishlistcount = count; // Update the count in the navbar
     });
   }
+
 }

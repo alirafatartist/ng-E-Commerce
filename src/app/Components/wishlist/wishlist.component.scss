@@ -25,31 +25,7 @@
     border: 1px solid #ff1c51;
     }
   }
-
 }
 .t-price{
   color: $color-text-secondry;
-}
-
-@media( max-width:521px){
-  .product{
-
-
-    flex-direction: column;
-    .left{
-      div{
-
-        flex-direction: column;
-        width: 100%;
-        p{
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
-  .right{
-    justify-content: space-between;
-    // width: 100px;
-    margin-top: 10px;
-  }
 }

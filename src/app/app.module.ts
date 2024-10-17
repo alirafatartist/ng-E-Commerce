@@ -20,6 +20,7 @@ import { NewsletterComponent } from './Components/newsletter/newsletter.componen
 import { FooterComponent } from './Components/footer/footer.component';
 import { ToastrModule } from 'ngx-toastr';
 import { CartComponent } from './Components/cart/cart.component';
+import { WishlistComponent } from './Components/wishlist/wishlist.component';
 register();
 
 
@@ -40,6 +41,7 @@ register();
     NewsletterComponent,
     FooterComponent,
     CartComponent,
+    WishlistComponent,
   ],
   imports: [
     BrowserModule,
