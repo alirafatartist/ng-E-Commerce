@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { auth } from '../../../../../env/firebase.config';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { AuthGuardService } from '../../../../Services/authguard.service';
+import { AuthGuardService } from '../../../../services/authGuard.service';
+// import { AuthGuardService } from '../../../../Services/authguard.service';
 
 @Component({
   selector: 'app-login',

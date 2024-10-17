@@ -1,6 +1,7 @@
-import { CartService } from './../../services/cart.service';
+// import { CartService } from './../../services/cart.service';
 import { Component } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
+import { CartService } from '../../Services/cart.service';
 // import { CartService } from '../../Services/cart.service';
 
 @Component({
