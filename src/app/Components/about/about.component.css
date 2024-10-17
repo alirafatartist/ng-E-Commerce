@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap");
+h1 {
+  font-size: 4rem;
+  font-family: "Mr De Haviland", cursive;
+  padding-top: 4rem;
+}
+
+p {
+  text-align: center;
+}
+
+.vid {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.vid img {
+  transition: 0.5s ease;
+}
+.vid:hover img {
+  transform: scale(1.1);
+}
+.vid:hover .backdrop {
+  background: rgba(0, 0, 0, 0.2156862745);
+}
+.vid .play {
+  top: 50%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  border: 0.3rem solid #fff;
+  border-radius: 50%;
+}
+.vid .play svg {
+  stroke: #fff;
+  fill: #fff;
+}
+
+.backdrop {
+  transition: 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  z-index: 1;
+}
+
+.modal {
+  background: transparent;
+}
+.modal button {
+  cursor: pointer;
+  right: 0;
+}
+.modal video {
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.modal-body,
+.modal-dialog,
+.modal-content {
+  background: transparent;
+  border: 0;
+}/*# sourceMappingURL=about.component.css.map */

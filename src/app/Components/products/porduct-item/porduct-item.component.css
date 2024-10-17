@@ -1,0 +1,74 @@
+.card {
+  cursor: pointer;
+}
+.card .card-title {
+  transition: 0.3s;
+}
+.card .card-title:hover {
+  color: #C58F63;
+  cursor: pointer;
+}
+.card .card-img {
+  overflow: hidden;
+}
+.card .card-img .actions {
+  opacity: 0;
+  transition: 0.7s ease;
+  position: absolute;
+  bottom: -100px;
+  z-index: 1;
+}
+.card .card-img .backdrop {
+  transition: 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+.card .price {
+  color: #666666;
+}
+.card:hover .card-img .actions {
+  bottom: 35% !important;
+  opacity: 1;
+}
+.card:hover .card-img .backdrop {
+  background: rgba(0, 0, 0, 0.2156862745);
+}
+.card .card-action-btn:hover svg.icon-tabler {
+  stroke: #C58F63;
+}
+.card .card-title {
+  transition: color 0.3s ease;
+}
+.card .card-title:hover {
+  color: #C58F63;
+  cursor: pointer;
+}
+
+.price {
+  color: #666666;
+}
+
+.icon-container {
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.icon-container svg {
+  transition: 0.3s;
+}
+.icon-container:hover svg {
+  stroke: #C58F63;
+}
+
+.add-to-wishlis.active svg {
+  fill: #C58F63;
+  stroke: #C58F63;
+}/*# sourceMappingURL=porduct-item.component.css.map */

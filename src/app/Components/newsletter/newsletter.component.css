@@ -1,0 +1,13 @@
+.newsletter {
+  padding: 20px;
+  background-color: #f3f4f6;
+}
+
+.email-field:focus:focus {
+  outline: none;
+  border: 1px solid #666666;
+}
+
+.newsletter-btn {
+  z-index: 4;
+}/*# sourceMappingURL=newsletter.component.css.map */
