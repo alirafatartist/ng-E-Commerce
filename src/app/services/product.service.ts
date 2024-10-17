@@ -8,6 +8,7 @@ export class ProductService {
 
   products:IProduct[]= [
     {
+      id: 1,
       image:"assets/Images/products/product-1.jpg",
       name:'Animi Dolor Pariatur',
       oldPrice:'$19.00',
@@ -19,6 +20,7 @@ export class ProductService {
       amount: 1
     },
     {
+      id: 2,
       image:"assets/Images/products/product-2.jpg",
       name:'Art Deco Home',
       oldPrice:'$30.00',
@@ -30,6 +32,7 @@ export class ProductService {
       amount: 1
     },
     {
+      id: 3,
       image:"assets/Images/products/product-3.jpg",
       name:'Artificial potted plant',
       oldPrice:'$40.00',
@@ -40,6 +43,7 @@ export class ProductService {
       amount: 1
     },
     {
+      id: 4,
       image:"assets/Images/products/product-4.jpg",
       name:'Dark Green Jug',
       oldPrice:'$17.10',
@@ -50,6 +54,7 @@ export class ProductService {
       amount: 1
     },
     {
+      id: 5,
       image:"assets/Images/products/product-5.jpg",
       name:'Drinking Glasses',
       oldPrice:'$21.00',
@@ -60,6 +65,7 @@ export class ProductService {
       amount: 1
     },
     {
+      id: 6,
       image:"assets/Images/products/product-6.jpg",
       name:'Helen Chair',
       oldPrice:'$69.50',
@@ -70,6 +76,7 @@ export class ProductService {
       amount: 1
     },
     {
+      id: 7,
       image:"assets/Images/products/product-7.jpg",
       name:'Artificial potted plant',
       oldPrice:'$40.00',
@@ -80,6 +87,7 @@ export class ProductService {
       amount: 1
     },
     {
+      id: 8,
       image:"assets/Images/products/product-8.jpg",
       name:'High Quality Glass Bottle',
       oldPrice:'$30.10',
@@ -89,6 +97,7 @@ export class ProductService {
       Type:'Accessory',
       amount: 1
     }, {
+      id: 9,
       image:"assets/Images/products/product-9.jpg",
       name:'Living Room & Bedroom Lights',
       oldPrice:'$45.00',
@@ -98,6 +107,7 @@ export class ProductService {
       Type:'Accessory',
       amount: 1
     }, {
+      id: 10,
       image:"assets/Images/products/product-10.jpg",
       name:'Nancy Chair',
       oldPrice:'$90.00',
@@ -107,6 +117,7 @@ export class ProductService {
       Type:'Furniture',
       amount: 1
     }, {
+      id: 11,
       image:"assets/Images/products/product-11.jpg",
       name:'Simple Chair',
       oldPrice:'$40.00',
@@ -116,6 +127,7 @@ export class ProductService {
       Type:'Furniture',
       amount: 1
     }, {
+      id: 12,
       image:"assets/Images/products/product-12.jpg",
       name:'Smooth Disk',
       oldPrice:'$64.00',
@@ -126,6 +138,7 @@ export class ProductService {
       amount: 1
     },
     {
+      id: 13,
       image:"assets/Images/products/product-13.jpg",
       name:'Table Black',
       oldPrice:'$67.00',
@@ -136,6 +149,7 @@ export class ProductService {
       amount: 1
     },
     {
+      id: 14,
       image:"assets/Images/products/product-14.jpg",
       name:'Table Wood Pine',
       oldPrice:'$ 50.00',
@@ -146,6 +160,7 @@ export class ProductService {
       amount: 1
     },
     {
+      id: 15,
       image:"assets/Images/products/product-15.jpg",
       name:'Teapot with black tea',
       oldPrice:'$25.00',
@@ -156,6 +171,7 @@ export class ProductService {
       amount: 1
     },
     {
+      id: 16,
       image:"assets/Images/products/product-16.jpg",
       name:'Wood Eggs',
       oldPrice:'$77.00',
@@ -166,6 +182,7 @@ export class ProductService {
       amount: 1
     },
     {
+      id: 17,
       image:"assets/Images/products/product-17.jpg",
       name:'Wooden Box',
       oldPrice:'$19.00',
@@ -176,6 +193,7 @@ export class ProductService {
       amount: 1
     },
     {
+      id: 18,
       image:"assets/Images/products/product-18.jpg",
       name:'Wooden Box',
       oldPrice:'$27.00 ',
@@ -186,6 +204,7 @@ export class ProductService {
       amount: 1
     },
     {
+      id: 19,
       image:"assets/Images/products/product-19.jpg",
       name:'Vase Of Flowers',
       oldPrice:'$15.00',

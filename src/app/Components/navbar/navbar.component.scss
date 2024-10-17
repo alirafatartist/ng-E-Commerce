@@ -54,3 +54,12 @@ button {
 h1{
   cursor: pointer;
 }
+button.active{
+
+  color: $color-text-secondry;
+  svg{
+
+  stroke: $color-text-secondry;
+  }
+
+}

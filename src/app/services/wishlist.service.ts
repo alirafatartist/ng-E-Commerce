@@ -49,4 +49,15 @@ export class WishlistService {
   getProducts() {
     return this.products;
   }
+
+  private wishlistState: { [productId: string]: boolean } = {};
+
+  toggleWishlist(productId: string, isActive: boolean) {
+    this.wishlistState[productId] = isActive;
+  }
+
+  isProductInWishlist(productId: string): boolean {
+    return !!this.wishlistState[productId];
+  }
+
 }

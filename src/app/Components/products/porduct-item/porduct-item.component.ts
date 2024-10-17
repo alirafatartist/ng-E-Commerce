@@ -16,8 +16,9 @@ export class PorductItemComponent {
 
   isActive: boolean = false;
 
-  toggleActive() {
-    this.isActive = !this.isActive; // Toggle the active state
+  toggleActive(prd:any) {
+    this.isActive = !this.isActive;
+    this._wishlistservice.toggleWishlist(this.prd.id, this.isActive);
   }
   productAdded() {
     this._toastr.success('Product Added', '', {
@@ -55,5 +56,9 @@ export class PorductItemComponent {
       this._wishlistservice.removeProduct(product)
       this.productRemoved()
     }
+  }
+  ngOnInit(): void {
+    this.isActive = this._wishlistservice.isProductInWishlist(this.prd.id);
+
   }
 }
