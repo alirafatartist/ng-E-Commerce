@@ -3,11 +3,10 @@
   <app-sidebar />
   <div class="mt-4 bg-body-tertiary p-4">
     <div>
-      <h1>Shop Cart</h1>
-      <p>Total price <span class="t-price fw-bold">{{totalPrice}}</span> $</p>
+      <h1>My Wishlist      </h1>
     </div>
     <div class="products-wrapper d-flex flex-column gap-3">
-      <div *ngFor="let product of products" class="product d-flex justify-content-between pb-2 border-bottom">
+      <div *ngFor="let product of products" class="product d-flex justify-content-between">
         <div class="left">
           <div class="d-flex gap-2 align-items-center">
             <div class="img-wrapper">
@@ -22,11 +21,11 @@
             </div>
           </div>
         </div>
-        <div class="right d-flex gap-4 align-items-center">
+        <!-- <div class="right d-flex gap-4 align-items-center">
           <button class="increase" (click)="increase(product)">+</button>
           <span>{{ product.amount }}</span>
           <button class="decrease" (click)="decrease(product)">-</button>
-        </div>
+        </div> -->
       </div>
     </div>
 

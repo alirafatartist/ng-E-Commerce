@@ -1,22 +1,20 @@
-// import { CartService } from './../../services/cart.service';
 import { Component } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
-import { CartService } from '../../Services/cart.service';
-// import { CartService } from '../../Services/cart.service';
+import { WishlistService } from '../../Services/wishlist.service';
 
 @Component({
-  selector: 'app-cart',
-  templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.scss'],
+  selector: 'app-wishlist',
+  templateUrl: './wishlist.component.html',
+  styleUrl: './wishlist.component.scss'
 })
-export class CartComponent {
+export class WishlistComponent {
   products: any[] = []; // Store the cart products
   totalPrice: number = 0; // Total price of all products
 
-  constructor(private _cartService: CartService,private toastr: ToastrService) {}
+  constructor(private _wishlistService: WishlistService,private toastr: ToastrService) {}
 
   ngOnInit(): void {
-    this.products = this._cartService.getProducts();
+    this.products = this._wishlistService.getProducts();
     this.calculateTotalPrice();
     console.log(this.calculateTotalPrice());
   }
@@ -34,8 +32,8 @@ export class CartComponent {
   }
 
   remove(product: any) {
-    this._cartService.removeProduct(product);
-    this.products = this._cartService.getProducts();
+    this._wishlistService.removeProduct(product);
+    this.products = this._wishlistService.getProducts();
     this.calculateTotalPrice();
     this.productRemoved()
   }

@@ -1,0 +1,298 @@
+[33mcommit 516b7fbe0e878b0ff53e40d3e4000862ecf912c6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: 93c9d55 9a4baf8
+Author: anda elaaser <andaelaaser@gmail.com>
+Date:   Wed Oct 16 23:37:04 2024 +0300
+
+    Merge branch 'master' of https://github.com/alirafatartist/ng-E-Commerce
+
+[33mcommit 93c9d55a07591e73911dab7fb0c1b57ac541ef85[m
+Author: anda elaaser <andaelaaser@gmail.com>
+Date:   Wed Oct 16 23:36:59 2024 +0300
+
+    ....
+
+[33mcommit 9a4baf8d42aa4403012fb4952a08c03deddc57fb[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Wed Oct 16 23:08:31 2024 +0300
+
+    test2
+
+[33mcommit 55109e9ed8b36343b50aa4ad80169ea004a5ad70[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Wed Oct 16 22:57:05 2024 +0300
+
+    test
+
+[33mcommit 70468600566396f5f543489174c3a689d37efd23[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Wed Oct 16 22:50:30 2024 +0300
+
+    add lock file
+
+[33mcommit 4b2dc44ce26a7c42357bc951a5727132c9956c7a[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Wed Oct 16 22:33:01 2024 +0300
+
+    commit
+
+[33mcommit 1328893de571cf1380548106ba78d0f0465cd478[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Wed Oct 16 22:16:02 2024 +0300
+
+    commit
+
+[33mcommit 6cb45a6e5b41c3e19ec1d5620dd7c6db271a6c09[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Wed Oct 16 21:38:51 2024 +0300
+
+    change routing and add toast
+
+[33mcommit e410a37b77f07de7a0a26b5272b759c647c277dd[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Wed Oct 16 21:17:20 2024 +0300
+
+    Finish cart component
+
+[33mcommit b875d573a580499ab89c1867acc9aab8d6b6b1a0[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Tue Oct 15 19:45:31 2024 +0300
+
+    commit 2
+
+[33mcommit 6fe8340fca3eb1df814a66d2bc80b70d71aa4713[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Tue Oct 15 19:38:19 2024 +0300
+
+    commit
+
+[33mcommit 8cde023d83b063b413b509204379e8c14f83cf6d[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Tue Oct 15 19:25:10 2024 +0300
+
+    commit
+
+[33mcommit 2731dca906851a6fd6cdf6d00dbb2bae9789527a[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Tue Oct 15 19:03:55 2024 +0300
+
+    commit
+
+[33mcommit df06e32870a456e18acb7fe133cc5085f5133947[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Tue Oct 15 18:36:45 2024 +0300
+
+    commit
+
+[33mcommit aad1bfc32944ed2718b540ca9ef6887ba75c8ffc[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Tue Oct 15 18:18:39 2024 +0300
+
+    comment the script tag in index.html
+
+[33mcommit 44fb2c2a3a3896ec912923b7eb9ca2289ace87ef[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Tue Oct 15 18:10:15 2024 +0300
+
+    commit
+
+[33mcommit ed4c8ab3cd938127916e47c403f050a3ffb6663a[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Tue Oct 15 17:57:34 2024 +0300
+
+    commit
+
+[33mcommit 67f317ecb9d592c7a4b252efe4a8aa8f4edfe450[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Tue Oct 15 17:44:58 2024 +0300
+
+    style nav
+
+[33mcommit 8445af23fc4b4443e4164691263a4387fd9191dc[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Tue Oct 15 17:31:52 2024 +0300
+
+    Add Guard
+
+[33mcommit 9b39ebd35f04337602e81a2825a39943205732cf[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Tue Oct 15 16:28:43 2024 +0300
+
+    style register form
+
+[33mcommit 86352855f02184b5b39671c3818fa37827179668[m
+Author: anda elaaser <andaelaaser@gmail.com>
+Date:   Tue Oct 15 02:40:08 2024 +0300
+
+    ..
+
+[33mcommit a566eda9ed8a2bd00a48b283a6676bdadc912606[m
+Author: anda elaaser <andaelaaser@gmail.com>
+Date:   Tue Oct 15 02:32:58 2024 +0300
+
+    fixed
+
+[33mcommit 506be81283e016bd4a45f39032a6329ad99e7f2d[m
+Author: anda elaaser <andaelaaser@gmail.com>
+Date:   Tue Oct 15 02:19:15 2024 +0300
+
+    ..
+
+[33mcommit 4ed63032a3f71034920b2703860dbdde175cb178[m
+Author: anda elaaser <andaelaaser@gmail.com>
+Date:   Tue Oct 15 02:18:12 2024 +0300
+
+    footer
+
+[33mcommit 0584267e5a2fa20fa39a11f8ad97663eb355f553[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Mon Oct 14 20:32:39 2024 +0300
+
+    style form
+
+[33mcommit 65dd9d211c03b9884320fc635579d88edf9bdd4c[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Mon Oct 14 06:50:14 2024 +0300
+
+    Add firebase to auth
+
+[33mcommit b3eaca299effcb1b3492e499e929bbe6121c7ddd[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Mon Oct 14 05:04:28 2024 +0300
+
+    Add favicon
+
+[33mcommit 7c4e8b46dc7ef2db604d4430303afde33f930963[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Mon Oct 14 04:52:54 2024 +0300
+
+    Add active style to wishlist btn in product item
+
+[33mcommit e7fb8837e41555b2af4714134fcbb01d2daadf14[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Mon Oct 14 04:36:51 2024 +0300
+
+    Add Toaster in signup page ✅
+
+[33mcommit 859d386f57c45e5e2071c340353de64a8a210014[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Mon Oct 14 04:31:12 2024 +0300
+
+    Add Toaster in login page ✅
+
+[33mcommit 0a6b4fff2e70657c21dcb25fdf10c9dddcb9d758[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Mon Oct 14 02:48:35 2024 +0300
+
+    style product-item wishlist
+
+[33mcommit 9f5c0760eada00111c9c0feb4f31f12b4b23a472[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Mon Oct 14 02:45:51 2024 +0300
+
+    style product-item wishlist
+
+[33mcommit cb3a40c08da4b87d2c262722d704227e02cbf3b5[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Mon Oct 14 02:34:38 2024 +0300
+
+    Fix navigation in sidebar
+
+[33mcommit e8ecc969eb0864ce2eb7dc18ac2498201ed752b4[m
+Author: anda elaaser <andaelaaser@gmail.com>
+Date:   Sat Oct 12 23:08:20 2024 +0300
+
+    Newsletter need fix on submit
+
+[33mcommit 31b96b611068ae424d63ae5709e6980be42847bb[m
+Author: anda elaaser <andaelaaser@gmail.com>
+Date:   Sat Oct 12 21:23:35 2024 +0300
+
+    search bar
+
+[33mcommit 4168f65f283a74acb979980e5e96ad20bb41bee9[m
+Author: anda elaaser <andaelaaser@gmail.com>
+Date:   Sat Oct 12 20:35:25 2024 +0300
+
+    scroll
+
+[33mcommit 93183ad91ae47ea45116d3fbfadeb457657e5565[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Sat Oct 12 20:23:10 2024 +0300
+
+    fix navbar
+
+[33mcommit b6bfcaa28611eb904c077f8a440b0c749b9963fa[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Sat Oct 12 20:15:05 2024 +0300
+
+    Auth module
+
+[33mcommit 20ba2a70b5a45f5fdae0dcc52734765891c48730[m
+Merge: eb29dee 8a90295
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Sat Oct 12 20:11:32 2024 +0300
+
+    Auth module
+
+[33mcommit eb29deee79554e26ba5abb391bf8c41e16a24474[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Sat Oct 12 20:07:20 2024 +0300
+
+    Auth module
+
+[33mcommit 8a90295d4c2a8a02bd87cfbd0951818860581ca8[m
+Author: anda elaaser <andaelaaser@gmail.com>
+Date:   Sat Oct 12 19:48:38 2024 +0300
+
+    fixed
+
+[33mcommit f5ce0232f400f633132f8150666025c8a16ec529[m
+Author: anda elaaser <andaelaaser@gmail.com>
+Date:   Sat Oct 12 19:46:43 2024 +0300
+
+    fixed resposive
+
+[33mcommit 33f12e841209022d404e0ff775ee478c0c08d5f6[m
+Merge: f540c3c ea0fc13
+Author: anda elaaser <andaelaaser@gmail.com>
+Date:   Sat Oct 12 17:15:35 2024 +0300
+
+    Merge branch 'master' of https://github.com/alirafatartist/ng-E-Commerce
+
+[33mcommit f540c3c70967d55bd5268d324663d4b36a17191c[m
+Author: anda elaaser <andaelaaser@gmail.com>
+Date:   Sat Oct 12 17:14:49 2024 +0300
+
+    try
+
+[33mcommit ea0fc13abc528c7c8d457fb6b1dd19377a821a8b[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Fri Oct 11 22:15:08 2024 +0300
+
+    Adding Swiper✅
+
+[33mcommit af588663eb0f6881f156afd7659554745a7946b3[m
+Merge: 0e4d08c 36137b9
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Thu Oct 10 22:50:02 2024 +0300
+
+    Adding hover animation on product item ✅
+
+[33mcommit 0e4d08cb347783e504290e061cbaa1268c565658[m
+Author: alirafatartist <lraft636@gmail.com>
+Date:   Thu Oct 10 22:45:31 2024 +0300
+
+    Adding hover animation on product item ✅
+
+[33mcommit 36137b9c124c9d1927f4ca70fec611756591cba0[m
+Author: anda elaaser <andaelaaser@gmail.com>
+Date:   Thu Oct 10 21:00:19 2024 +0300
+
+    fix products item style
+
+[33mcommit 630460e33a170a667d03a3ddbd11376faf69ea09[m
+Merge: 22aa87b 5395fe9
+Author: anda elaaser <andaelaaser@gmail.com>
+Date:   Thu Oct 10 20:54:03 2024 +0300
+
+    

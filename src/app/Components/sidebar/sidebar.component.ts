@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
-import { AuthGuardService } from '../../Services/authguard.service';
 import { Router } from '@angular/router';
+import { AuthGuardService } from '../../services/authGuard.service';
 
 @Component({
   selector: 'app-sidebar',

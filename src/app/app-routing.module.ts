@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './Components/homepage/homepage.component';
 import { authGuard } from './Guards/auth.guard';
 import { CartComponent } from './Components/cart/cart.component';
+import { WishlistComponent } from './Components/wishlist/wishlist.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'auth', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   },
   { path: 'homepage', component: HomePageComponent,canActivate:[authGuard] },
   { path: 'cart', component: CartComponent,canActivate:[authGuard] },
+  { path: 'wishlist', component: WishlistComponent,canActivate:[authGuard] },
   // { path: '**',redirectTo:'homepage' }
 ];
 
