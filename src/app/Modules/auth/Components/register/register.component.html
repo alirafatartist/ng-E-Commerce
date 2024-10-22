@@ -1,10 +1,12 @@
-<div class="overflow-hidden">
-  <div class="row">
+<div class="container-fluid overflow-hidden vh-100">
+  <div class="row h-100">
+    <!-- Left Column: Form Section -->
     <div
       class="left-form px-4 col-md-6 d-flex flex-column justify-content-center align-items-center"
     >
-      <h1 class="fw-bold mb-5">Woodex</h1>
-      <h3 class="fw-normal text-black" style="letter-spacing: 1px">Register</h3>
+      <h3 class="fw-normal text-black mb-4" style="letter-spacing: 1px">
+        Register
+      </h3>
 
       <form
         [formGroup]="registerForm"
@@ -12,49 +14,61 @@
         (ngSubmit)="onRegistersubmit()"
         class="w-75"
       >
-        <div data-mdb-input-init class="form-outline mb-4">
-          <label class="form-label" for="name">Full Name*</label>
+        <!-- First Name -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="firstName">First Name*</label>
           <input
             type="text"
-            id="name"
+            id="firstName"
             class="form-control form-control-lg"
             [class.is-invalid]="
-              registerForm.get('userName')?.invalid &&
-              registerForm.get('userName')?.touched
+              registerForm.get('firstName')?.invalid &&
+              registerForm.get('firstName')?.touched
             "
-            [class.is-valid]="
-              registerForm.get('userName')?.valid &&
-              registerForm.get('userName')?.touched
-            "
-            placeholder="name"
-            formControlName="userName"
+            placeholder="First Name"
+            formControlName="firstName"
             required
           />
           <div
             *ngIf="
-              registerForm.get('userName')?.invalid &&
-              registerForm.get('userName')?.touched
+              registerForm.get('firstName')?.invalid &&
+              registerForm.get('firstName')?.touched
             "
           >
-            <ng-container *ngIf="registerForm.get('userName')?.errors">
-              <p
-                *ngIf="registerForm.get('userName')?.errors?.['minlength']"
-                class="text-danger p-0 m-0"
-              >
-                Name must be at least 3 characters long.
-              </p>
-              <p
-                *ngIf="registerForm.get('userName')?.errors?.['required']"
-                class="text-danger p-0 m-0"
-              >
-                Your name is required.
-              </p>
-            </ng-container>
+            <p class="text-danger p-0 m-0">
+              First Name is required and must be at least 3 characters.
+            </p>
           </div>
         </div>
 
-        <div data-mdb-input-init class="form-outline mb-4">
-          <label class="form-label" for="email">Email address*</label>
+        <!-- Last Name -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="lastName">Last Name*</label>
+          <input
+            type="text"
+            id="lastName"
+            class="form-control form-control-lg"
+            [class.is-invalid]="
+              registerForm.get('lastName')?.invalid &&
+              registerForm.get('lastName')?.touched
+            "
+            placeholder="Last Name"
+            formControlName="lastName"
+            required
+          />
+          <div
+            *ngIf="
+              registerForm.get('lastName')?.invalid &&
+              registerForm.get('lastName')?.touched
+            "
+          >
+            <p class="text-danger p-0 m-0">Last Name is required.</p>
+          </div>
+        </div>
+
+        <!-- Email Address -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="email">Email Address*</label>
           <input
             type="email"
             id="email"
@@ -63,11 +77,7 @@
               registerForm.get('email')?.invalid &&
               registerForm.get('email')?.touched
             "
-            [class.is-valid]="
-              registerForm.get('email')?.valid &&
-              registerForm.get('email')?.touched
-            "
-            placeholder="email"
+            placeholder="Email Address"
             formControlName="email"
             required
           />
@@ -77,38 +87,74 @@
               registerForm.get('email')?.touched
             "
           >
-            <ng-container *ngIf="registerForm.get('email')?.errors">
-              <p
-                *ngIf="registerForm.get('email')?.errors?.['email']"
-                class="text-danger p-0 m-0"
-              >
-                Invalid email address.
-              </p>
-              <p
-                *ngIf="registerForm.get('email')?.errors?.['required']"
-                class="text-danger p-0 m-0"
-              >
-                Email address is required.
-              </p>
-            </ng-container>
+            <p class="text-danger p-0 m-0">Please provide a valid email address.</p>
           </div>
         </div>
 
-        <div data-mdb-input-init class="form-outline mb-4">
-          <label class="form-label" for="pass">Password*</label>
+        <!-- Phone Number -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="phone">Phone Number*</label>
+          <input
+            type="tel"
+            id="phone"
+            class="form-control form-control-lg"
+            [class.is-invalid]="
+              registerForm.get('phone')?.invalid &&
+              registerForm.get('phone')?.touched
+            "
+            placeholder="Phone Number"
+            formControlName="phone"
+            required
+          />
+          <div
+            *ngIf="
+              registerForm.get('phone')?.invalid &&
+              registerForm.get('phone')?.touched
+            "
+          >
+            <p class="text-danger p-0 m-0">
+              Phone number is required and must be numeric.
+            </p>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="address">Address*</label>
+          <input
+            type="text"
+            id="address"
+            class="form-control form-control-lg"
+            [class.is-invalid]="
+              registerForm.get('address')?.invalid &&
+              registerForm.get('address')?.touched
+            "
+            placeholder="Address"
+            formControlName="address"
+            required
+          />
+          <div
+            *ngIf="
+              registerForm.get('address')?.invalid &&
+              registerForm.get('address')?.touched
+            "
+          >
+            <p class="text-danger p-0 m-0">Address is required.</p>
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="password">Password*</label>
           <input
             type="password"
-            id="pass"
+            id="password"
             class="form-control form-control-lg"
             [class.is-invalid]="
               registerForm.get('password')?.invalid &&
               registerForm.get('password')?.touched
             "
-            [class.is-valid]="
-              registerForm.get('password')?.valid &&
-              registerForm.get('password')?.touched
-            "
-            placeholder="password"
+            placeholder="Password"
             formControlName="password"
             required
           />
@@ -118,28 +164,16 @@
               registerForm.get('password')?.touched
             "
           >
-            <ng-container *ngIf="registerForm.get('password')?.errors">
-              <p
-                *ngIf="registerForm.get('password')?.errors?.['required']"
-                class="text-danger p-0 m-0"
-              >
-                Password is required.
-              </p>
-              <p
-                *ngIf="registerForm.get('password')?.errors?.['minlength']"
-                class="text-danger p-0 m-0"
-              >
-                Password must be at least 6 characters long.
-              </p>
-            </ng-container>
+            <p class="text-danger p-0 m-0">
+              Password must be at least 6 characters.
+            </p>
           </div>
         </div>
 
+        <!-- Submit Button -->
         <div class="pt-1 mb-4">
           <button
-            data-mdb-button-init
-            data-mdb-ripple-init
-            class="btn btn-lg text-white"
+            class="btn btn-lg btn-block text-white"
             type="submit"
             [ngClass]="!registerForm.valid ? 'disabled' : ''"
             [disabled]="!registerForm.valid"
@@ -147,20 +181,22 @@
             Sign up
           </button>
         </div>
+
+        <!-- Link to Login -->
         <p>
           have an account?
-          <a class="register" type="button" routerLink="/auth/login"
-            >Login here</a
-          >
+          <a class="register" type="button" routerLink="/auth/login">Login here</a>
         </p>
       </form>
     </div>
+
+    <!-- Right Column: Image Section -->
     <div class="col-md-6 p-0 d-none d-lg-block">
       <div class="w-100 h-100">
         <img
-          src="../../../../../assets/Images/auth/register.jpg"
-          alt=""
-          class="w-100 object-fit-cover"
+          src="assets/Images/auth/register.jpg"
+          alt="Chair image"
+          class="w-100 h-100 object-fit-cover"
         />
       </div>
     </div>

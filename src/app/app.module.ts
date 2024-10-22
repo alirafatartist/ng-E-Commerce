@@ -21,6 +21,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { ToastrModule } from 'ngx-toastr';
 import { CartComponent } from './Components/cart/cart.component';
 import { WishlistComponent } from './Components/wishlist/wishlist.component';
+import { ProfileComponent } from './Components/profile/profile.component';
 register();
 
 
@@ -42,6 +43,7 @@ register();
     FooterComponent,
     CartComponent,
     WishlistComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

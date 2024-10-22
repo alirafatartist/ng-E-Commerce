@@ -98,3 +98,11 @@ p
 //     width: 80%; // You can adjust this width as needed
 //   }
 // }
+
+.form-control.is-invalid {
+  border-color: #e3342f; // Red border for invalid inputs
+}
+
+.text-danger {
+  font-size: 0.875rem;
+}

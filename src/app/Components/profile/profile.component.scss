@@ -1,0 +1,81 @@
+// Variables for consistent styling
+$primary-color: #2c3e50;
+$secondary-color: #f5f5f5;
+$button-color: #f49b42;
+$border-radius: 8px;
+$input-border-color: #ddd;
+$light-white: #fafafa; // Light white background color
+
+body {
+  background-color: $light-white; // Apply a light white background to the entire page
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: 40px auto;  // Added some top spacing
+  padding: 30px;  // Added more padding for better layout
+  background-color: white;  // Slightly darker for contrast
+  border-radius: $border-radius;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  // Slightly more shadow for depth
+
+  .profile-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;  // Increased space below the title
+    text-align: center;
+    color: $primary-color;
+  }
+
+  .profile-form {
+    display: flex;
+    flex-direction: column;
+
+    .form-group {
+      margin-bottom: 20px;  // Increased spacing between fields
+      text-align: left;
+
+      label {
+        font-weight: bold;
+        color: $primary-color;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 12px;  // Slightly increased padding for better interaction
+        border-radius: $border-radius;
+        border: 1px solid $input-border-color;
+        background-color: white;
+        font-size: 1rem;
+        color: $primary-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+
+        &:read-only {
+          background-color: #f7f7f7;
+        }
+      }
+
+      textarea {
+        resize: none;
+      }
+    }
+
+    .btn-edit {
+      background-color: $button-color;
+      color: white;
+      padding: 12px 0;  // Adjusted button padding
+      border: none;
+      border-radius: $border-radius;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1rem;
+      margin-top: 25px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($button-color, 10%);
+      }
+    }
+  }
+}

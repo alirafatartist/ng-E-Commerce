@@ -4,6 +4,7 @@ import { HomePageComponent } from './Components/homepage/homepage.component';
 import { authGuard } from './Guards/auth.guard';
 import { CartComponent } from './Components/cart/cart.component';
 import { WishlistComponent } from './Components/wishlist/wishlist.component';
+import { ProfileComponent } from './Components/profile/profile.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'auth', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'homepage', component: HomePageComponent,canActivate:[authGuard] },
   { path: 'cart', component: CartComponent,canActivate:[authGuard] },
   { path: 'wishlist', component: WishlistComponent,canActivate:[authGuard] },
+  { path: 'myprofile', component: ProfileComponent }
   // { path: '**',redirectTo:'homepage' }
 ];
 
