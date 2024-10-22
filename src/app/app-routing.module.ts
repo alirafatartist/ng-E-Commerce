@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'homepage', component: HomePageComponent,canActivate:[authGuard] },
   { path: 'cart', component: CartComponent,canActivate:[authGuard] },
   { path: 'wishlist', component: WishlistComponent,canActivate:[authGuard] },
-  { path: 'myprofile', component: ProfileComponent }
+  { path: 'myprofile', component: ProfileComponent,canActivate:[authGuard] }
   // { path: '**',redirectTo:'homepage' }
 ];
 

@@ -25,6 +25,11 @@
               registerForm.get('firstName')?.invalid &&
               registerForm.get('firstName')?.touched
             "
+            [class.is-valid]="
+            registerForm.get('firstName')?.valid &&
+            registerForm.get('firstName')?.touched
+          "
+
             placeholder="First Name"
             formControlName="firstName"
             required
@@ -52,6 +57,11 @@
               registerForm.get('lastName')?.invalid &&
               registerForm.get('lastName')?.touched
             "
+            [class.is-valid]="
+            registerForm.get('lastName')?.valid &&
+            registerForm.get('lastName')?.touched
+          "
+
             placeholder="Last Name"
             formControlName="lastName"
             required
@@ -77,6 +87,11 @@
               registerForm.get('email')?.invalid &&
               registerForm.get('email')?.touched
             "
+            [class.is-valid]="
+            registerForm.get('email')?.valid &&
+            registerForm.get('email')?.touched
+          "
+
             placeholder="Email Address"
             formControlName="email"
             required
@@ -102,6 +117,10 @@
               registerForm.get('phone')?.invalid &&
               registerForm.get('phone')?.touched
             "
+             [class.is-valid]="
+             registerForm.get('phone')?.valid &&
+             registerForm.get('phone')?.touched
+           "
             placeholder="Phone Number"
             formControlName="phone"
             required
@@ -129,6 +148,10 @@
               registerForm.get('address')?.invalid &&
               registerForm.get('address')?.touched
             "
+             [class.is-valid]="
+             registerForm.get('address')?.valid &&
+             registerForm.get('address')?.touched
+           "
             placeholder="Address"
             formControlName="address"
             required
@@ -154,6 +177,10 @@
               registerForm.get('password')?.invalid &&
               registerForm.get('password')?.touched
             "
+             [class.is-valid]="
+             registerForm.get('password')?.valid &&
+             registerForm.get('password')?.touched
+           "
             placeholder="Password"
             formControlName="password"
             required
